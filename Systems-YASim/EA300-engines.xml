@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =============================================
+         EXTRA EA 300 FlightGear Engine File
+
+           Patrizio MELIS © 2017 2018 2019
+
+             GNU GENERAL PUBLIC LICENSE
+                Version 2, June 1991
+     =============================================
+-->
+
+<PropertyList>
+  
+  <engine n="0">
+    <engine-num type="int">0</engine-num>
+    <rpm>500</rpm>
+    <running>false</running>
+  </engine>
+</PropertyList>

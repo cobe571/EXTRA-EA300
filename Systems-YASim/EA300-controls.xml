@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =============================================
+         EXTRA EA 300 FlightGear Controls File
+
+           Patrizio MELIS © 2017 2018 2019
+
+             GNU GENERAL PUBLIC LICENSE
+                Version 2, June 1991
+     =============================================
+-->
+
+<PropertyList>
+
+  <engines>
+    <engine n="0">
+      <magnetos>0</magnetos>
+      <propeller-pitch>1</propeller-pitch>
+    </engine>
+    <engine n="1">
+      <magnetos>0</magnetos>
+      <propeller-pitch>1</propeller-pitch>
+    </engine>
+  </engines>
+  <gear>
+    <brake-parking> 1 </brake-parking>
+    <gear-down> true </gear-down>
+  </gear>
+  
+</PropertyList>

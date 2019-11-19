@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =====================================
+                  Extra EA 300
+        Patrizio MELIS © 2017 2018 2019
+		   
+          GNU GENERAL PUBLIC LICENSE
+            Version 2, June 1991
+     ===================================== -->
+
+<PropertyList>
+
+  <EA300>
+    <pilot-lb>180</pilot-lb>
+  </EA300>
+  
+</PropertyList>

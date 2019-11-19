@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =============================================
+          EXTRA EA 300 FlightGear Base File
+
+           Patrizio MELIS © 2017 2018 2019
+		   
+             GNU GENERAL PUBLIC LICENSE
+                Version 2, June 1991
+     =============================================
+-->
+
+<PropertyList>
+
+  <sim include="EA300-views.xml">
+
+    <fuel-fraction>0.8</fuel-fraction>
+
+    <startup>
+     <splash-texture>Aircraft/EXTRA-EA300/EA300-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path archive="y">Aircraft/EXTRA-EA300/Models/EA300-YASim.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <sound>
+      <path>Aircraft/EXTRA-EA300/Sounds/EA300-sound.xml</path>
+    </sound>
+    
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int   n="0"  type="int">  0 </int>                                         <!-- 0 immat -->
+        <int   n="1"  type="int">  0 </int>                                         <!-- 1 immat -->
+        <int   n="2"  type="int">  0 </int>                                         <!-- 2 immat -->
+        <int   n="3"  type="int">  0 </int>                                         <!-- 3 immat -->
+        <int   n="4"  type="int">  0 </int>                                         <!-- 4 immat -->
+        <int   n="5"  type="int">  0 </int>                                         <!-- 5 immat -->
+        <int   n="6"  type="bool"> 1 </int>                                         <!-- 6 -->
+        <int   n="7"  type="int">  0 </int>                                         <!-- 7  -->
+        <int   n="8"  alias="/systems/electrical/outputs/nav-lights">  0 </int>     <!-- 8 nav-lights -->
+        <int   n="9"  alias="/sim/model/lights/beacon/state">  false </int>         <!-- 9 strobe-lights -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>                     <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/engines/engine[0]/rpm"/>
+        <float n="5"  alias="/engines/engine[0]/cranking"/>
+        <float n="6"  alias="/gear/gear[0]/wow/"/>
+        <float n="7"  alias="/gear/gear[1]/wow/"/>
+        <float n="8"  alias="/gear/gear[2]/wow/"/>
+        <float n="9"  alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="10" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <help include="EA300-help.xml"/>
+
+    <menubar include="../Dialogs/EA300-menu.xml"/>
+
+  </sim>
+
+  <input include="EA300-keyboard.xml"/>
+  
+  <controls include="EA300-controls.xml"/>
+  
+  <yasim include="yasim.xml"/>
+
+  <engines include="EA300-engines.xml"/>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/EXTRA-EA300/Nasal/doors.nas</file>
+    </doors>
+    <EA300>
+      <file>Aircraft/EXTRA-EA300/Nasal/liveries.nas</file>
+    </EA300>
+  </nasal>
+
+</PropertyList>

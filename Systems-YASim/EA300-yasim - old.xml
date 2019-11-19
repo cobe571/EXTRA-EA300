@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =============================================
+          EXTRA EA 300 FlightGear YASim File
+
+           Patrizio MELIS © 2017 2018 2019
+		   
+             GNU GENERAL PUBLIC LICENSE
+                Version 2, June 1991
+     =============================================
+
+     source       : https://en.wikipedia.org/wiki/Extra_EA-300
+                    https://www.extraaircraft.com/
+
+Manufacturer                 :  Extra Flugzeugbau
+Designer                     :  Walter Extra
+Type                         :  Aerobatic monoplane
+Year                         :  May 1988
+Powerplant                   :  Lycoming AEIO-540-L1B5, 300 hp, 6-cylinder
+Wingspan                     :  26,3 ft / 8,0 m
+Length                       :  22,8 ft / 6,9 m 
+Height                       :   8,6 ft / 2,6 m
+Empty weight                 :  1.455 lbs / 660 kg 
+Crew                         :  One pilot
+Capacity                     :  Two
+
+-->
+<airplane mass="1470" version="YASIM_VERSION_CURRENT">
+
+  <!-- Approach configuration -->
+  <approach speed="62" aoa="10" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.3"/>
+  </approach>
+
+  <!-- Cruise configuration -->
+  <cruise speed="260" alt="8000" fuel="0.375">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+  </cruise>
+
+  <cockpit x="-1.7" y="0.0" z="0.508"/>
+
+  <!-- Fuselage -->
+    <fuselage ax="0.3" ay="0" az="-0.21" bx="1.8" by="0" bz="0" width="1.008" taper="0.6" midpoint="0 "/>
+  <fuselage ax="0.3" ay="0" az="-0.21" bx="-4.6" by="0" bz="0.031" width="1.008" taper="0.2" midpoint="0 "/>
+   <fuselage ax="0" ay="0" az="0.3" bx="-4.6" by="0" bz="0.031" width="0.9" taper="0.2" midpoint="0.2 "/>
+
+  <wing x="-0.43" y="0.393" z="-0.2"  
+        taper="0.47" 
+        incidence="0"
+        twist="0"
+        length="3.6" 
+        chord="1.79" 
+        sweep="-3" 
+        dihedral="0" 
+        camber="-0.00"> 
+        <stall aoa="24" width="4" peak="1.5"/>
+        <flap1 start="0.17" end="1" lift="1.4" drag="1.1"/>
+        <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+        <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/> 
+
+  </wing>
+
+  <hstab x="-4.15" y="0.0" z="0.2" 
+         taper="0.6" 
+         incidence="0" 
+         length="1.612" 
+         chord="0.95" 
+         sweep="2">
+         <stall aoa="24" width="2" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.5" drag="1.1"/>
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+
+  </hstab>
+
+  <vstab x="-4.430" y="0" z="-0.099" 
+         taper="0.33" 
+         length="1.4" 
+         chord="1.55" 
+         sweep="8">
+         <stall aoa="18" width="4" peak="1.5"/>
+         <flap0 start="0" end="1" lift="2.0" drag="1.2"/>
+         <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+         <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+  </vstab>
+
+  <!--
+       Engine    : Textron Lycoming AEIO-540-L1B5D
+       Propeller : MT-Propeller MTV-9-B-C/200-15a
+       MTOM      : 720 kg aerobatic configuration
+  -->
+  <propeller x="1.95" y="0.0" z="0" 
+             radius="1.0"
+	     cruise-speed="141" 
+	     cruise-rpm="2450"
+	     cruise-alt="6000" 
+	     cruise-power="225"
+	     takeoff-power="300" 
+	     takeoff-rpm="2700"
+	     mass="438"
+	     moment="8.2"
+             min-rpm="600"
+             max-rpm="2700"
+	     fine-stop="0.8"
+	     coarse-stop="2">
+    <piston-engine eng-rpm="2700" 
+                   eng-power="300"
+                   displacement="540" 
+                   compression="8.5"/>
+    <actionpt x="1.95" y="0.0" z="0"  />
+    <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" />
+    <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
+    <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
+    <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" />
+    <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
+
+  </propeller>
+  
+  <!-- Left wheel -->
+  <gear x="0.35" y="0.9" z="-1.410"  
+        compression="0.35"
+        spring="0.8" 
+        on-solid="1"
+        sfric="1"
+        dfric="1">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+  </gear>
+
+  <!-- Right wheel -->
+  <gear x="0.35" y="-0.9" z="-1.410" 
+        compression="0.35"
+        spring="0.8"
+        on-solid="1"
+        sfric="1"
+        dfric="1">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+  </gear>
+
+  <!-- Tail wheel -->
+  <gear x="-5.1" y="0" z="-0.550" 
+        compression="0.2"
+        spring="0.8"
+        on-solid="1"
+        sfric="1"
+        dfric="1">
+        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="0.5" dst1="-0.5"/>
+  </gear>
+
+  <!-- Fuel - Wing's tanks 2 X 60 liters -->
+  
+  <tank x="0" y="0.5" z="0" capacity="399.6" />
+  <tank x="0" y="-0.5" z="0" capacity="399.6" />
+
+  <!-- Pilot -->
+  <weight x="-1.7" y="0.0" z="0.508" mass-prop="/sim/weight[0]/weight-lb"/>
+
+  <!-- Mass distribution
+       CG theorique x=0.961 y=0.0 z=-0.510
+  -->
+  <ballast x="0.5" y="0" z="0" mass="550"/>
+  
+</airplane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =============================================
+         EXTRA EA 300 FlightGear Keyboard File
+
+           Patrizio MELIS © 2017 2018 2019
+
+             GNU GENERAL PUBLIC LICENSE
+                Version 2, June 1991
+     =============================================
+-->
+
+<PropertyList>
+  
+  <keyboard>
+    
+    <key n="100">
+      <name>d</name>
+      <desc>Crew door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </key>
+    
+  </keyboard>
+  
+</PropertyList>

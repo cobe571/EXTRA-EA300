@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<!-- =====================================
+                  Extra EA 300 
+        Patrizio MELIS © 2017 2018 2019
+		   
+          GNU GENERAL PUBLIC LICENSE
+            Version 2, June 1991
+     ===================================== -->
+
+<mass_balance>
+	
+	<ixx unit="SLUG*FT2">1000</ixx>
+	<iyy unit="SLUG*FT2">1200</iyy>
+	<izz unit="SLUG*FT2">2300</izz>
+	<ixy unit="SLUG*FT2">0</ixy>
+	<ixz unit="SLUG*FT2">0</ixz>
+	<iyz unit="SLUG*FT2">0</iyz>
+	<emptywt unit="LBS">1500</emptywt>
+	
+	<location name="CG" unit="M">
+		<x>0.27916</x>
+		<y>0</y>
+		<z>-0.15037</z>
+	</location>
+	
+	<pointmass name="Seat">
+		<weight unit="LBS">170</weight>
+		<location name="POINTMASS" unit="M">
+			<x>0.27916</x>
+			<y>0</y>
+			<z>-0.15037</z>
+		</location>
+	</pointmass>
+
+</mass_balance>
