@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =====================================
+       EXTRA EA 300 Panel Animation File
+         
+        Patrizio MELIS © 2017 2018 2019
+		   
+          GNU GENERAL PUBLIC LICENSE
+            Version 2, June 1991
+     ===================================== -->
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Opaque Objects List --> 
+    <object-name> </object-name>
+    
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name> </object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>panel</texture-prop>
+    <texture>panel.png</texture>
+  </animation>
+
+
+
+<!--  Instruments Position on Panel  -->
+
+
+
+</PropertyList>
