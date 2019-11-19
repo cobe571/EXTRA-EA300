@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>tach.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/EA300/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>/engines/engine[0]/rpm</property>
+    <interpolation>
+      <entry><ind>    0.0 </ind><dep> -128.60 </dep></entry>     
+      <entry><ind>    0.1 </ind><dep> -123.85 </dep></entry>     
+      <entry><ind>  500.0 </ind><dep>  -92.85 </dep></entry>     
+      <entry><ind> 1000.0 </ind><dep>  -57.10 </dep></entry>     
+      <entry><ind> 1500.0 </ind><dep>  -21.10 </dep></entry>     
+      <entry><ind> 2000.0 </ind><dep>   15.40 </dep></entry>     
+      <entry><ind> 2500.0 </ind><dep>   51.40 </dep></entry>     
+      <entry><ind> 3000.0 </ind><dep>   87.40 </dep></entry>     
+      <entry><ind> 3500.0 </ind><dep>  123.40 </dep></entry>     
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
