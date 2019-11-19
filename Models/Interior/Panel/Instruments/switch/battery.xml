@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+  
+  <path>on-off.ac</path>
+  
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>base</object-name>
+    <object-name>on-off</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>on-off</object-name>
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <object-name>on-off</object-name>
+    <type>rotate</type>
+    <property>controls/electric/battery-switch</property>
+    <factor>  35 </factor>
+    <min-deg>  0 </min-deg>
+    <max-deg> 35 </max-deg>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>on-off</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/electric/battery-switch</property>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

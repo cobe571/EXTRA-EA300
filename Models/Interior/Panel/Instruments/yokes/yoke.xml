@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>yoke.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>base</object-name>
+    <object-name>yoke</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>yoke</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep>  0.07 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind>  1 </ind><dep> -0.07 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>yoke</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep>  50 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1 </ind><dep> -50 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Object Selection -->
+  <animation>
+    <type>select</type>
+    <object-name>yoke</object-name>
+    <condition>
+      <property>/sim/model/hide-yoke</property>
+    </condition>
+  </animation>
+ 
+</PropertyList>

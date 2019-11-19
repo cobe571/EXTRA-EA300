@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>hi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>front</object-name>
+    <object-name>HdgBug</object-name>
+    <object-name>OBS-Knob</object-name>
+    <object-name>Hdg-Knob</object-name>
+
+    <object-name>vitre</object-name>
+    <object-name>clic-offset-L</object-name>
+    <object-name>clic-offset-R</object-name>
+    <object-name>clic-bug-L</object-name>
+    <object-name>clic-bug-R</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/EA300/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>front</object-name>
+    <object-name>HdgBug</object-name>
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>OBS-Knob</object-name>
+    <object-name>Hdg-Knob</object-name>
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.45000 </red>
+      <green> 0.09000 </green>
+      <blue>  0.00001 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>face</object-name>
+    <property>/instrumentation/heading-indicator/indicated-heading-deg</property>
+    <factor>-1</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HdgBug</object-name>
+    <property>/instrumentation/heading-indicator/indicated-heading-deg</property>
+    <factor>-1</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HdgBug</object-name>
+     <property>/autopilot/settings/heading-bug-deg</property>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!--     Heading Bug control    -->
+  <animation>
+    <type>pick</type>
+    <object-name>click-bug-L</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small decrease</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/heading-bug-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>large decrease</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/heading-bug-deg</property>
+        <step>-5</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>   
+
+  <animation>
+    <type>pick</type>
+    <object-name>click-bug-R</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small increase</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/heading-bug-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>large increase</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/heading-bug-deg</property>
+        <step>5</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>   
+
+  <!--             Heading Offset             -->
+  <animation>
+    <type>pick</type>
+    <object-name>click-offset-L</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small decrease</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/heading-indicator/offset-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>  
+    <action>
+      <name>large decrease</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/heading-indicator/offset-deg</property>
+        <step>-5</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>click-offset-R</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small increase</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/heading-indicator/offset-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>  
+    <action>
+      <name>large increase</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/heading-indicator/offset-deg</property>
+        <step>5</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

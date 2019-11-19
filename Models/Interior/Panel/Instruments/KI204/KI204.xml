@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>KI204.ac</path>
+
+  <animation>
+    <object-name>BearingInc</object-name>
+    <object-name>BearingDec</object-name>
+    <object-name>OBS</object-name>
+    <object-name>Bezel</object-name>
+    <object-name>Bearing</object-name>
+    <object-name>Face</object-name>
+    <object-name>GSNeedle</object-name>
+    <object-name>NavNeedle</object-name>
+    <object-name>PointerFrom</object-name>
+    <object-name>PointerTo</object-name>
+    <object-name>Scale</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/EA300/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Bearing</object-name>
+    <object-name>Face</object-name>
+    <object-name>GSNeedle</object-name>
+    <object-name>NavNeedle</object-name>
+    <object-name>PointerFrom</object-name>
+    <object-name>PointerTo</object-name>
+    <object-name>Scale</object-name>
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Bearing</object-name>
+      <property>/instrumentation/nav[1]/radials/selected-deg</property>
+    <factor>-1</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>NavNeedle</object-name>
+    <property>/instrumentation/nav[1]/heading-needle-deflection</property>
+    <factor>4</factor>
+    <min>-30</min>
+    <max>30</max>
+    <center>
+      <x-m> -0.03 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  0.00 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>GSNeedle</object-name>
+    <property>/instrumentation/nav[1]/gs-needle-deflection</property>
+    <factor>4</factor>
+    <min>-30</min>
+    <max>30</max>
+    <center>
+      <x-m> -0.03 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  0.00 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>BearingDec</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small decrease</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+          <property>/instrumentation/nav[1]/radials/selected-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>large decrease</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+          <property>/instrumentation/nav[1]radials/selected-deg</property>
+        <step>-5</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>BearingInc</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small increase</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+          <property>/instrumentation/nav[1]radials/selected-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>large increase</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+          <property>/instrumentation/nav[1]radials/selected-deg</property>
+        <step>5</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
