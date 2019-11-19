@@ -1,0 +1,10 @@
+============================================
+       
+      FlightGear "Pilot" 3D Model file
+
+         Patrizio MELIS : Jul. 2019
+
+         GNU GENERAL PUBLIC LICENSE
+            Version 2, June 1991
+
+============================================
