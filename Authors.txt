@@ -1,0 +1,12 @@
+====================================================
+                ### Author File ###
+====================================================
+
+                   MELIS Patrizio
+
+ 3D Model, YASim FDM, JSBSim FDM, Liveries, Systems
+
+            https://github.com/cobe571
+     https://sites.google.com/site/cobe571/home
+
+====================================================

@@ -1,0 +1,84 @@
+Role	Aerobatic monoplane
+National origin	Germany
+Manufacturer	Extra Flugzeugbau - https://www.extraaircraft.com/300LP.php
+Designer	Walter Extra
+First flight	May 1988
+
+Crew: one pilot
+Capacity: two
+
+AIRFRAME
+
+Fuselage assembly, 1.7734 steel
+Carbon fiber wing assembly with integral tank
+Carbon / glass hybrid composite empennage structure
+Fiberglass landing gear spring
+Bubble canopy
+Titanium firewall
+Lightweight shells and fairings group
+Tailwheel, hard
+
+POWERPLANT AND PROPELLER
+
+Lycoming AEIO-540-L1B5, 300 hp, 6-cylinder
+Gomolzig, 6-in-1 exhaust system
+Lightweight hose kit, teflon with integrated fire sleeves
+Lightweight single oil cooler system
+Electric starter
+Two fuel pumps (1 engine-driven, 1 electric)
+MT-Propeller, MTV-9-B-C/C 200-15, 3-blade (2.700 RPM)
+
+COCKPIT
+
+Fixed composite front seat, contour molded
+Adjustable composite rear seat, contour molded
+Forward rudder pedals with differential toebrakes
+Front and rear seat Hooker safety harness with ratchet
+2 front and 2 rear bezel-operated air vents
+Rear rudder pedals manually adjustable
+
+SYSTEMS
+
+65 Amp alternator
+12V battery
+Strobe / navigation lights at wing tips
+Smoke system with automatic filling system
+External battery "trickle" charge socket, incl. charging cable
+Electric stall warning system
+Pitot static system drain
+
+STANDARD PANEL EQUIPMENT
+
+Airspeed indicator (kts)
+Altimeter (ft, inHg/hPa)
+Mechanical accelerometer
+Magnetic compass
+Slip and skid indicator, with holder if req'd
+
+AIRCRAFT DIMENSIONS
+
+wingspan	26,3 ft / 8,0 m
+length	22,8 ft / 6,9 m
+height	8,6 ft / 2,6 m
+wing area	115,2 ft2/ 10,7 m2
+FAA / EASA certified load factor	+/- 10 g
+
+WEIGHTS
+
+typ. equipped empty weight	1.455 lbs / 660 kg
+MTOW normal category (+6/-3g)	2.095 lbs / 950 kg
+MTOW two-pilot acro (+8/-8g)	1.918 lbs / 870 kg
+MTOW single-pilot acro (+10/-10g)	1.808 lbs / 820 kg
+
+AIRSPEEDS
+
+never exceed speed (Vne)	220 kts
+maneuvering speed (Va) (acro)	158 kts
+stall speed at 1.808 lbs / 820 kg (Vs)	55 kts
+stall speed at 2.095 lbs / 950 kg (Vs) 	60 kts
+
+FUEL
+
+total capacity	49,9 gal / 189 ltr
+usable fuel	49,4 gal / 187 ltr
+usable fuel - acro tanks only	17,7 gal / 67 ltr
