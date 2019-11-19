@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ======================================
+      EXTRA EA 300 Interior Animation File
+         
+        Patrizio MELIS © 2017 2018 2019
+		   
+          GNU GENERAL PUBLIC LICENSE
+            Version 2, June 1991
+     ===================================== -->
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Opaque Objects List -->
+    <object-name>Inner-Cage.000</object-name>
+    <object-name>Interior-Shell.000</object-name>
+    <object-name>Interior-Shell.001</object-name>
+    <object-name>Interior-Shell.002</object-name>
+    <object-name>Interior-Tickness</object-name>
+
+    <!-- Trasparent Objects List -->
+    <object-name>  </object-name>  
+  </animation>
+
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>Inner-Cage.000</object-name>
+    <object-name>Interior-Shell.000</object-name>
+    <object-name>Interior-Shell.001</object-name>
+    <object-name>Interior-Shell.002</object-name>
+    <object-name>Interior-Tickness</object-name>
+	
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>interior</texture-prop>
+    <texture>interior.jpg</texture>
+  </animation>
+
+  <!-- Working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/EXTRA-EA300/Models/Effects/Glass/glass</inherits-from>
+    <object-name>  </object-name>
+  </effect>
+
+  <!-- Pilots
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Pilot/FG-Pilot.xml</path>
+    <offsets>
+      <x-m>  0.87732 </x-m>
+      <y-m> -0.56130 </y-m>
+      <z-m> -0.29525 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Pilot/FG-Pilot.xml</path>
+    <offsets>
+      <x-m>  0.87964 </x-m>
+      <y-m>  0.55335 </y-m>
+      <z-m> -0.29525 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -2.41903 </x-m>
+      <y-m>  0.53581 </y-m>
+      <z-m> -0.73499 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -2.41903 </x-m>
+      <y-m> -0.53581 </y-m>
+      <z-m> -0.73499 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Panel -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Yoke -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Yoke/yoke.xml</path>
+    <offsets>
+      <x-m> -2.80618 </x-m>
+      <y-m> -0.53581 </y-m>
+      <z-m> -0.73411 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Yoke/yoke.xml</path>
+    <offsets>
+      <x-m> -2.80618 </x-m>
+      <y-m>  0.53581 </y-m>
+      <z-m> -0.73411 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Throttle -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Throttle/throttle.xml</path>
+    <offsets>
+      <x-m> -2.35452 </x-m>
+      <y-m> -0.79258 </y-m>
+      <z-m> -0.63643 </z-m>
+    </offsets>	
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Throttle/throttle.xml</path>
+    <offsets>
+      <x-m> -2.35452 </x-m>
+      <y-m>  0.18920 </y-m>
+      <z-m> -0.63643 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pedals -->
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -3.24056 </x-m>
+      <y-m> -0.53581 </y-m>
+      <z-m> -0.64376 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -3.24056 </x-m>
+      <y-m>  0.53581 </y-m>
+      <z-m> -0.64376 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>
