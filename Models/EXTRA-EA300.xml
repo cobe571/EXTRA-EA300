@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =====================================
+          EXTRA EA 300 Animation File
+         
+        Patrizio MELIS © 2017 2018 2019
+		   
+          GNU GENERAL PUBLIC LICENSE
+            Version 2, June 1991
+     ===================================== -->
+
+<PropertyList>
+
+  <path>EXTRA-EA300.ac</path>
+
+  <offsets> <!-- This properly centeres the model for JSBsim as well for MP -->
+    <x-m>-1.42477</x-m>
+  </offsets>
+
+  <!--  MP sound call  -->
+  <sound>
+    <path>Aircraft/EXTRA-EA300/Sounds/mp-sound.xml</path>
+  </sound>
+  
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/EXTRA-EA300/Models/Liveries", 10);
+      
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!--  Object Opaque  -->
+    <object-name>Aleiron-L.000</object-name>
+    <object-name>Aleiron-L.001</object-name>
+    <object-name>Aleiron-L.002</object-name>
+    <object-name>Aleiron-R.000</object-name>
+    <object-name>Aleiron-R.001</object-name>
+    <object-name>Aleiron-R.002</object-name>
+    <object-name>Antenna</object-name>
+    <object-name>Base-Lights</object-name>
+    <object-name>Base-Lights-Mirror</object-name>
+    <object-name>Bottom-Light-White</object-name>
+    <object-name>Canopy.000-OUT</object-name>
+    <object-name>Canopy-Glass.OUT.001</object-name>
+    <object-name>Canopy-Glass.OUT.002</object-name>
+    <object-name>Elevator-L.000</object-name>
+    <object-name>Elevator-L.001</object-name>
+    <object-name>Elevator-R.000</object-name>
+    <object-name>Elevator-R.001</object-name>
+    <object-name>Elevator-R.002</object-name>
+    <object-name>Elevator-R.003</object-name>
+    <object-name>Exaust-IN</object-name>
+    <object-name>Exaust-OUT</object-name>
+    <object-name>Fuselage.000</object-name>
+    <object-name>Fuselage.001</object-name>
+    <object-name>Fuselage.002</object-name>
+    <object-name>Fuselage.003</object-name>
+    <object-name>Fuselage.004</object-name>
+    <object-name>Gear-F.000</object-name>
+    <object-name>Gear-F.001</object-name>
+    <object-name>Gear-R.000</object-name>
+    <object-name>Gear-R.001</object-name>
+    <object-name>Gear-R.002</object-name>
+    <object-name>Gear-R.003</object-name>
+    <object-name>Gear-R.004</object-name>
+    <object-name>Gear-R.005</object-name>
+    <object-name>Gear-R.006</object-name>
+    <object-name>Intake.000</object-name>
+    <object-name>Intake.001</object-name>
+    <object-name>Intake.002</object-name>
+    <object-name>Intake.003</object-name>
+    <object-name>Intake.004</object-name>
+    <object-name>Intake.005</object-name>
+    <object-name>Intake.006</object-name>
+    <object-name>Prop0.000</object-name>
+    <object-name>Prop0.001</object-name>
+    <object-name>Rivets.000</object-name>
+    <object-name>Rudder-Base-Light</object-name>
+    <object-name>Rudder-Base-Light-Mirror</object-name>
+    <object-name>Rudder-Tie-L</object-name>
+    <object-name>Rudder-Tie-R</object-name>
+    <object-name>Rudder.000</object-name>
+    <object-name>Rudder.001</object-name>
+    <object-name>Rudder.002</object-name>
+    <object-name>Rudder.003</object-name>
+    <object-name>Rudder.004</object-name>
+    <object-name>Shk-Abs.001</object-name>
+    <object-name>Shk-Abs.002</object-name>
+    <object-name>Shk-Abs.003</object-name>
+    <object-name>Shk-Abs.004</object-name>
+    <object-name>Shk-Abs.005</object-name>
+    <object-name>Shk-Abs.006</object-name>
+    <object-name>Shk-Abs.007</object-name>
+    <object-name>Shk-Abs.008</object-name>
+    <object-name>Shk-Abs.009</object-name>
+    <object-name>Shk-Abs.010</object-name>
+    <object-name>Shk-Abs.011</object-name>
+    <object-name>Shk-Abs.012</object-name>
+    <object-name>Shk-Abs.013</object-name>
+    <object-name>Shk-Abs.014</object-name>
+    <object-name>Spinner.000</object-name>
+    <object-name>Spinner.001</object-name>
+    <object-name>Spinner.002</object-name>
+    <object-name>Spinner.003</object-name>
+    <object-name>Spinner.004</object-name>
+    <object-name>Stabilizer.000</object-name>
+    <object-name>Stabilizer.001</object-name>
+    <object-name>Stabilizer.002</object-name>
+    <object-name>Top-Light-Red</object-name>
+    <object-name>Vertical-Stab.000</object-name>
+    <object-name>Vertical-Stab.001</object-name>
+    <object-name>Vertical-Stab.002</object-name>
+    <object-name>Wheel-B.000</object-name>
+    <object-name>Wheel-B.001</object-name>
+    <object-name>Wheel-B.002</object-name>
+    <object-name>Wheel-B.003</object-name>
+    <object-name>Wheel-B.004</object-name>
+    <object-name>Wheel-Cover.000</object-name>
+    <object-name>Wheel-Cover.001</object-name>
+    <object-name>Wheel-L.000</object-name>
+    <object-name>Wheel-L.001</object-name>
+    <object-name>Wheel-R.000</object-name>
+    <object-name>Wheel-R.001</object-name>
+    <object-name>Wing-Light-Green</object-name>
+    <object-name>Wing-Light-Red</object-name>
+    <object-name>Wings.000</object-name>
+    <object-name>Wings.001</object-name>
+    <object-name>Wings.002</object-name>
+    <object-name>Wings.003</object-name>
+
+    <!--  Object Transparent  -->
+    <object-name>Bottom-Glass-White</object-name>
+    <object-name>Canopy-Glass.OUT.000</object-name>
+    <object-name>Fuselage-Glass.000</object-name>
+    <object-name>Glass-Green</object-name>
+    <object-name>Glass-Red</object-name>	
+    <object-name>PropBlur0</object-name>
+    <object-name>PropDisk0</object-name>
+    <object-name>Rudder-Top-Glass-Red</object-name>	
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Aleiron-L.000</object-name>
+    <object-name>Aleiron-L.002</object-name>
+    <object-name>Aleiron-R.000</object-name>
+    <object-name>Aleiron-R.002</object-name>
+    <object-name>Canopy.000-OUT</object-name>
+    <object-name>Elevator-L.000</object-name>
+    <object-name>Elevator-L.001</object-name>
+    <object-name>Elevator-R.000</object-name>
+    <object-name>Elevator-R.001</object-name>
+    <object-name>Elevator-R.002</object-name>
+    <object-name>Elevator-R.003</object-name>
+    <object-name>Fuselage.000</object-name>
+    <object-name>Fuselage.001</object-name>
+    <object-name>Rudder-Tie-L</object-name>
+    <object-name>Rudder-Tie-R</object-name>
+    <object-name>Rudder.000</object-name>
+    <object-name>Rudder.002</object-name>
+    <object-name>Rudder.003</object-name>
+    <object-name>Rudder.004</object-name>
+    <object-name>Stabilizer.000</object-name>
+    <object-name>Stabilizer.002</object-name>
+    <object-name>Vertical-Stab.000</object-name>
+    <object-name>Vertical-Stab.001</object-name>
+    <object-name>Vertical-Stab.002</object-name>
+    <object-name>Wheel-Cover.000</object-name>
+    <object-name>Wings.000</object-name>
+    <object-name>Wings.001</object-name>
+    <object-name>Wings.003</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.jpg</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Aleiron-L.001</object-name>
+    <object-name>Aleiron-R.001</object-name>
+    <object-name>Antenna</object-name>
+    <object-name>Base-Lights</object-name>
+    <object-name>Canopy-Glass.OUT.001</object-name>
+    <object-name>Canopy-Glass.OUT.002</object-name>
+    <object-name>Fuselage.002</object-name>
+    <object-name>Fuselage.003</object-name>
+    <object-name>Fuselage.004</object-name>
+    <object-name>Gear-F.000</object-name>
+    <object-name>Gear-F.001</object-name>
+    <object-name>Gear-R.000</object-name>
+    <object-name>Gear-R.001</object-name>
+    <object-name>Gear-R.002</object-name>
+    <object-name>Gear-R.003</object-name>
+    <object-name>Gear-R.004</object-name>
+    <object-name>Gear-R.005</object-name>
+    <object-name>Gear-R.006</object-name>
+    <object-name>Intake.000</object-name>
+    <object-name>Intake.001</object-name>
+    <object-name>Intake.004</object-name>
+    <object-name>Intake.005</object-name>
+    <object-name>Rivets.000</object-name>
+    <object-name>Rudder-Base-Light</object-name>
+    <object-name>Rudder.001</object-name>
+    <object-name>Shk-Abs.001</object-name>
+    <object-name>Shk-Abs.002</object-name>
+    <object-name>Shk-Abs.003</object-name>
+    <object-name>Shk-Abs.004</object-name>
+    <object-name>Shk-Abs.005</object-name>
+    <object-name>Shk-Abs.006</object-name>
+    <object-name>Shk-Abs.007</object-name>
+    <object-name>Shk-Abs.008</object-name>
+    <object-name>Shk-Abs.009</object-name>
+    <object-name>Shk-Abs.010</object-name>
+    <object-name>Shk-Abs.011</object-name>
+    <object-name>Shk-Abs.012</object-name>
+    <object-name>Shk-Abs.013</object-name>
+    <object-name>Shk-Abs.014</object-name>
+    <object-name>Stabilizer.001</object-name>
+    <object-name>Wheel-B.000</object-name>
+    <object-name>Wheel-B.001</object-name>
+    <object-name>Wheel-B.002</object-name>
+    <object-name>Wheel-B.003</object-name>
+    <object-name>Wheel-B.004</object-name>
+    <object-name>Wheel-Cover.001</object-name>
+    <object-name>Wheel-L.000</object-name>
+    <object-name>Wheel-L.001</object-name>
+    <object-name>Wheel-R.000</object-name>
+    <object-name>Wheel-R.001</object-name>
+    <object-name>Wings.002</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>gear</texture-prop>
+    <texture>gear.jpg</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Exaust-IN</object-name>
+    <object-name>Exaust-OUT</object-name>
+    <object-name>Intake.002</object-name>
+    <object-name>Intake.003</object-name>
+    <object-name>Intake.006</object-name>
+    <object-name>Prop0.000</object-name>
+    <object-name>Prop0.001</object-name>
+    <object-name>Spinner.000</object-name>
+    <object-name>Spinner.001</object-name>
+    <object-name>Spinner.002</object-name>
+    <object-name>Spinner.003</object-name>
+    <object-name>Spinner.004</object-name>
+	
+	<property-base>sim/model/livery</property-base>
+    <texture-prop>propeller</texture-prop>
+    <texture>propeller.jpg</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>PropBlur0</object-name>
+    <object-name>PropDisk0</object-name>
+
+	<property-base>sim/model/livery</property-base>
+    <texture-prop>prop-blur</texture-prop>
+    <texture>prop.png</texture>
+  </animation>
+
+  <!--  Effects Reflect  -->
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>Aleiron-L.000</object-name>
+    <object-name>Aleiron-L.001</object-name>
+    <object-name>Aleiron-L.002</object-name>
+    <object-name>Aleiron-R.000</object-name>
+    <object-name>Aleiron-R.001</object-name>
+    <object-name>Aleiron-R.002</object-name>
+    <object-name>Antenna</object-name>
+    <object-name>Base-Lights</object-name>
+    <object-name>Base-Lights-Mirror</object-name>
+    <object-name>Bottom-Light-White</object-name>
+    <object-name>Canopy.000-OUT</object-name>
+    <object-name>Canopy-Glass.OUT.001</object-name>
+    <object-name>Canopy-Glass.OUT.002</object-name>
+    <object-name>Elevator-L.000</object-name>
+    <object-name>Elevator-L.001</object-name>
+    <object-name>Elevator-R.000</object-name>
+    <object-name>Elevator-R.001</object-name>
+    <object-name>Elevator-R.002</object-name>
+    <object-name>Elevator-R.003</object-name>
+    <object-name>Exaust-IN</object-name>
+    <object-name>Exaust-OUT</object-name>
+    <object-name>Fuselage.000</object-name>
+    <object-name>Fuselage.001</object-name>
+    <object-name>Fuselage.002</object-name>
+    <object-name>Fuselage.003</object-name>
+    <object-name>Fuselage.004</object-name>
+    <object-name>Gear-F.000</object-name>
+    <object-name>Gear-F.001</object-name>
+    <object-name>Gear-R.000</object-name>
+    <object-name>Gear-R.001</object-name>
+    <object-name>Gear-R.002</object-name>
+    <object-name>Gear-R.003</object-name>
+    <object-name>Gear-R.004</object-name>
+    <object-name>Gear-R.005</object-name>
+    <object-name>Gear-R.006</object-name>
+    <object-name>Intake.000</object-name>
+    <object-name>Intake.001</object-name>
+    <object-name>Intake.002</object-name>
+    <object-name>Intake.003</object-name>
+    <object-name>Intake.004</object-name>
+    <object-name>Intake.005</object-name>
+    <object-name>Intake.006</object-name>
+    <object-name>Prop0.000</object-name>
+    <object-name>Prop0.001</object-name>
+    <object-name>Rivets.000</object-name>
+    <object-name>Rudder-Base-Light</object-name>
+    <object-name>Rudder-Base-Light-Mirror</object-name>
+    <object-name>Rudder-Tie-L</object-name>
+    <object-name>Rudder-Tie-R</object-name>
+    <object-name>Rudder.000</object-name>
+    <object-name>Rudder.001</object-name>
+    <object-name>Rudder.002</object-name>
+    <object-name>Rudder.003</object-name>
+    <object-name>Rudder.004</object-name>
+    <object-name>Shk-Abs.001</object-name>
+    <object-name>Shk-Abs.002</object-name>
+    <object-name>Shk-Abs.003</object-name>
+    <object-name>Shk-Abs.004</object-name>
+    <object-name>Shk-Abs.005</object-name>
+    <object-name>Shk-Abs.006</object-name>
+    <object-name>Shk-Abs.007</object-name>
+    <object-name>Shk-Abs.008</object-name>
+    <object-name>Shk-Abs.009</object-name>
+    <object-name>Shk-Abs.010</object-name>
+    <object-name>Shk-Abs.011</object-name>
+    <object-name>Shk-Abs.012</object-name>
+    <object-name>Shk-Abs.013</object-name>
+    <object-name>Shk-Abs.014</object-name>
+    <object-name>Spinner.000</object-name>
+    <object-name>Spinner.001</object-name>
+    <object-name>Spinner.002</object-name>
+    <object-name>Spinner.003</object-name>
+    <object-name>Spinner.004</object-name>
+    <object-name>Stabilizer.000</object-name>
+    <object-name>Stabilizer.001</object-name>
+    <object-name>Stabilizer.002</object-name>
+    <object-name>Top-Light-Red</object-name>
+    <object-name>Vertical-Stab.000</object-name>
+    <object-name>Vertical-Stab.001</object-name>
+    <object-name>Vertical-Stab.002</object-name>
+    <object-name>Wheel-B.000</object-name>
+    <object-name>Wheel-B.001</object-name>
+    <object-name>Wheel-B.002</object-name>
+    <object-name>Wheel-B.003</object-name>
+    <object-name>Wheel-B.004</object-name>
+    <object-name>Wheel-Cover.000</object-name>
+    <object-name>Wheel-Cover.001</object-name>
+    <object-name>Wheel-L.000</object-name>
+    <object-name>Wheel-L.001</object-name>
+    <object-name>Wheel-R.000</object-name>
+    <object-name>Wheel-R.001</object-name>
+    <object-name>Wing-Light-Green</object-name>
+    <object-name>Wing-Light-Red</object-name>
+    <object-name>Wings.000</object-name>
+    <object-name>Wings.001</object-name>
+    <object-name>Wings.002</object-name>
+    <object-name>Wings.003</object-name>
+  </effect>
+
+  <!--  Rembrandt  -->
+  <effect>
+    <inherits-from>Aircraft/EXTRA-EA300/Models/Effects/Glass/glass</inherits-from>
+    <object-name>Bottom-Glass-White</object-name>
+    <object-name>Canopy-Glass.OUT.000</object-name>
+    <object-name>Fuselage-Glass.000</object-name>
+    <object-name>Glass-Green</object-name>
+    <object-name>Glass-Red</object-name>
+    <object-name>Rudder-Top-Glass-Red</object-name>
+  </effect>
+
+  <!--  Effects Transparent  -->  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>PropBlur0</object-name>
+    <object-name>PropDisk0</object-name>
+  </effect>
+
+  <!--  Interior  -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m>0.000</x-m>
+      <y-m>0.000</y-m>
+      <z-m>0.000</z-m>
+    </offsets>
+  </model>
+
+  <!--  Propeller-FULL  --> 
+  <animation>
+    <name>PropellerFULL</name>
+    <object-name>Prop0.000</object-name>
+    <object-name>Prop0.001</object-name>
+    <object-name>PropBlur0</object-name>	
+    <object-name>PropDisk0</object-name>
+    <object-name>Spinner.000</object-name>
+    <object-name>Spinner.001</object-name>
+    <object-name>Spinner.002</object-name>
+    <object-name>Spinner.003</object-name>
+    <object-name>Spinner.004</object-name>
+  </animation>
+
+  <!--  Object Selection Visible by RPM Function  -->
+  <animation>
+    <type>select</type>
+    <object-name>PropDisk0</object-name>
+    <condition>
+      <greater-than>
+        <property>/engines/engine[0]/rpm</property>
+        <value>1500</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>PropBlur0</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>/engines/engine[0]/rpm</property>
+        <value>600.000</value>
+      </greater-than>
+      <less-than>
+        <property>/engines/engine[0]/rpm</property>
+        <value>1500.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Prop0.000</object-name>
+    <object-name>Prop0.001</object-name>
+    <condition>
+      <less-than>
+        <property>/engines/engine[0]/rpm</property>
+        <value>1500</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>PropellerFULL</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
+    <property>/engines/engine[0]/rpm</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> -1.92043 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.00000 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!--  Aleirons Animation  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Aleiron-L.000</object-name>
+    <object-name>Aleiron-L.001</object-name>
+    <object-name>Aleiron-L.002</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property> <!-- Is really degrees, for MP transit -->
+    <factor> -1 </factor>
+    <offset-deg>0</offset-deg>
+    <axis>
+      <x1-m>  0.86537 </x1-m>
+      <y1-m> -1.01147 </y1-m>
+      <z1-m> -0.18089 </z1-m>
+      <x2-m>  0.42402 </x2-m>
+      <y2-m> -3.99736 </y2-m>
+      <z2-m> -0.18103 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Aleiron-R.000</object-name>
+    <object-name>Aleiron-R.001</object-name>
+    <object-name>Aleiron-R.002</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property> <!-- Is really degrees, for MP transit -->
+    <factor> -1 </factor>
+    <offset-deg>0</offset-deg>
+    <axis>
+      <x1-m>  0.42402 </x1-m>
+      <y1-m>  3.99736 </y1-m>
+      <z1-m> -0.18089 </z1-m>
+      <x2-m>  0.86537 </x2-m>
+      <y2-m>  1.01147 </y2-m>
+      <z2-m> -0.18103 </z2-m>
+    </axis>
+  </animation>
+  
+  <!--  Elevators Animation  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Elevator-L.000</object-name>
+    <object-name>Elevator-L.001</object-name>
+    <property>surface-positions/elevator-pos-norm</property> <!-- Is really degrees, for MP transit -->
+    <factor> 1 </factor>
+    <axis>
+      <x1-m>  4.34793  </x1-m>
+      <y1-m> -1.59722 </y1-m>
+      <z1-m>  0.17655 </z1-m>
+      <x2-m>  4.33743 </x2-m>
+      <y2-m> -0.05126 </y2-m>
+      <z2-m>  0.18317 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Elevator-R.000</object-name>
+    <object-name>Elevator-R.001</object-name>
+    <object-name>Elevator-R.002</object-name>
+    <object-name>Elevator-R.003</object-name>
+    <property>surface-positions/elevator-pos-norm</property> <!-- Is really degrees, for MP transit -->
+    <factor> 1 </factor>
+    <axis>
+      <x1-m>  4.33743 </x1-m>
+      <y1-m>  0.05126 </y1-m>
+      <z1-m>  0.18317 </z1-m>
+      <x2-m>  4.34793 </x2-m>
+      <y2-m>  1.59722 </y2-m>
+      <z2-m>  0.17655 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation> <!-- Trim Tab -->
+    <type>rotate</type>
+    <object-name>Elevator-R.002</object-name>
+    <property>surface-positions/speedbrake-pos-norm</property> <!-- Is really degrees, for MP transit -->
+    <factor> 1 </factor>
+    <axis>
+      <x1-m>  4.54317 </x1-m>
+      <y1-m> -0.09232 </y1-m>
+      <z1-m>  0.1791 </z1-m>
+      <x2-m>  4.54317 </x2-m>
+      <y2-m>  0.46549 </y2-m>
+      <z2-m>  0.18031 </z2-m>
+    </axis>
+  </animation>
+  
+  <!--  Rudder Animation  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Rudder.000</object-name>
+    <object-name>Rudder.001</object-name>
+    <object-name>Rudder.002</object-name>
+    <object-name>Rudder.003</object-name>
+    <object-name>Rudder.004</object-name>
+    <object-name>Rudder-Base-Light</object-name>
+    <object-name>Rudder-Base-Light-Mirror</object-name>
+    <object-name>Rudder-Tie-L</object-name>
+    <object-name>Rudder-Tie-R</object-name>
+    <object-name>Rudder-Top-Glass-Red</object-name>
+    <object-name>Top-Light-Red</object-name>
+    <property>surface-positions/rudder-pos-norm</property> <!-- Is really degrees, for MP transit -->
+    <factor> -1 </factor>
+    <center>
+      <x-m>  4.71385 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.51267 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y> 
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!--  Wheels Animation  -->
+  <animation>
+    <type>spin</type>
+    <object-name>Wheel-L.000</object-name>
+    <object-name>Wheel-L.001</object-name>
+    <property>/gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -0.34049 </x-m>
+      <y-m> -0.89021 </y-m>
+      <z-m> -1.25719 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Wheel-R.000</object-name>
+    <object-name>Wheel-R.001</object-name>
+    <property>/gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -0.34049 </x-m>
+      <y-m>  0.89021 </y-m>
+      <z-m> -1.25719 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Wheel-B.000</object-name>
+    <object-name>Wheel-B.001</object-name>
+    <object-name>Wheel-B.002</object-name>
+    <object-name>Wheel-B.003</object-name>
+    <object-name>Wheel-B.004</object-name>
+    <property>/gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  5.09035 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.46119 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!--  Cranking effects  -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Effects/Cranking/cranking.xml</path>
+  </model>
+  
+  <!--  Ground Effects  -->
+  <!--  Left Wheel  -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Effects/Ground/ground0.xml</path>
+    <offsets>
+      <x-m> -0.34049 </x-m>
+      <y-m> -0.89021 </y-m>
+      <z-m> -1.41320 </z-m>
+    </offsets>
+  </model>
+  
+  <!--  Right Wheel  -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Effects/Ground/ground1.xml</path>
+    <offsets>
+      <x-m> -0.34049 </x-m>
+      <y-m>  0.89021 </y-m>
+      <z-m> -1.41320 </z-m>
+    </offsets>
+  </model>
+  
+  <!--  Tail Wheel  -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Effects/Ground/ground2.xml</path>
+    <offsets>
+      <x-m>  5.10928 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.53066 </z-m>
+    </offsets>
+  </model>
+
+  <!--  Vortex Effects  -->
+  <model>
+   <path>Aircraft/EXTRA-EA300/Models/Effects/Vortex/condensation-left.xml</path>
+    <offsets>
+     <x-m>  0.63034 </x-m>
+     <y-m> -3.99736 </y-m>
+     <z-m> -0.17621 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+   <path>Aircraft/EXTRA-EA300/Models/Effects/Vortex/condensation-right.xml</path>
+    <offsets>
+     <x-m>  0.63034 </x-m>
+     <y-m>  3.99736 </y-m>
+     <z-m> -0.17621 </z-m>
+    </offsets>
+  </model>
+
+  <!--  Smoke (Start Engine, Left Side)  -->
+  <model>
+   <path>Aircraft/EXTRA-EA300/Models/Effects/Smoke/smoke.xml</path>
+    <offsets>
+      <x-m> -0.55439 </x-m>
+      <y-m> -0.09552 </y-m>
+      <z-m> -0.77472 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!--  Smoke (Start Engine, Right Side)  -->
+  <model>
+   <path>Aircraft/EXTRA-EA300/Models/Effects/Smoke/smoke.xml</path>
+    <offsets>
+      <x-m> -0.55439 </x-m>
+      <y-m>  0.09552 </y-m>
+      <z-m> -0.77472 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!--  Canopy  -->
+  <animation>
+    <name>Canopy</name>
+    <object-name>Canopy.000-OUT</object-name>
+    <object-name>Canopy-Glass.OUT.001</object-name>
+    <object-name>Canopy-Glass.OUT.002</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>Canopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>All-Canopy</object-name>
+    <property>/sim/multiplay/generic/float[0]</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 85 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -6.06352 </x1-m>
+      <y1-m> -0.41168 </y1-m>
+      <z1-m>  1.74012 </z1-m>
+      <x2-m> -5.17260 </x2-m>
+      <y2-m> -0.44389 </y2-m>
+      <z2-m>  1.84379 </z2-m>
+    </axis>
+  </animation>
+
+<!--  Navigation Lights  
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Lights/beacon.xml</path>
+    <offsets>
+      <x-m> 3.11484 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 2.34636 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Lights/RedLight.xml</path>
+    <offsets>
+     <x-m>  0.63034 </x-m>
+     <y-m> -3.99736 </y-m>
+     <z-m> -0.17621 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m>   0.32548 </x-m>
+      <y-m> -15.80339 </y-m>
+      <z-m>   1.40277 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Lights/GreenLight.xml</path>
+    <offsets>
+     <x-m>  0.63034 </x-m>
+     <y-m>  3.99736 </y-m>
+     <z-m> -0.17621 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  0.32548 </x-m>
+      <y-m> 15.80339 </y-m>
+      <z-m>  1.40277 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Lights/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -6.61752 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.68186 </z-m>
+    </offsets>
+  </model>  -->
+
+</PropertyList>
