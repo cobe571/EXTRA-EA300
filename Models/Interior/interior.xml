@@ -20,7 +20,11 @@
     <object-name>Interior-Shell.001</object-name>
     <object-name>Interior-Shell.002</object-name>
     <object-name>Interior-Tickness</object-name>
-
+    <object-name>Panel.000</object-name>
+    <object-name>Panel.001</object-name>
+    <object-name>Panel.002</object-name>
+    <object-name>Seat-Support-Front</object-name>
+    <object-name>Seat-Support-Rear</object-name>
     <!-- Trasparent Objects List -->
     <object-name>  </object-name>  
   </animation>
@@ -37,6 +41,29 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>interior</texture-prop>
     <texture>interior.jpg</texture>
+  </animation>
+  
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>Panel.000</object-name>
+    <object-name>Panel.001</object-name>
+    <object-name>Panel.002</object-name>
+	
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>panel</texture-prop>
+    <texture>panel.png</texture>
+  </animation>
+  
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>Seat-Support-Front</object-name>
+    <object-name>Seat-Support-Rear</object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>seat</texture-prop>
+    <texture>seat.png</texture>
   </animation>
 
   <!-- Working for Rembrandt -->
@@ -63,26 +90,6 @@
       <z-m> -0.29525 </z-m>
     </offsets>
   </model> -->
-  
-  <!-- Seat -->
-  <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Seat/seat.xml</path>
-    <offsets>
-      <x-m> -2.41903 </x-m>
-      <y-m>  0.53581 </y-m>
-      <z-m> -0.73499 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Seat -->
-  <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Seat/seat.xml</path>
-    <offsets>
-      <x-m> -2.41903 </x-m>
-      <y-m> -0.53581 </y-m>
-      <z-m> -0.73499 </z-m>
-    </offsets>
-  </model>
 
   <!-- Panel -->
   <model>
@@ -93,7 +100,17 @@
       <z-m> 0.000 </z-m>
     </offsets>
   </model>
-  
+
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+
   <!-- Yoke -->
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Yoke/yoke.xml</path>
