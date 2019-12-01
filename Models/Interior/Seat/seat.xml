@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =====================================
+       EXTRA EA 300 Seat Animation File
+         
+        Patrizio MELIS © 2017 2018 2019
+		   
+          GNU GENERAL PUBLIC LICENSE
+            Version 2, June 1991
+     ===================================== -->
+
+<PropertyList>
+
+  <path>seat.ac</path>
+
+  <animation>
+    <!-- Opaque Objects List --> 
+    <object-name>Seat-Support-Front</object-name>
+    <object-name>Seat-Support-Rear</object-name>	
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>Seat-Support-Front</object-name>
+    <object-name>Seat-Support-Rear</object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>seat</texture-prop>
+    <texture>seat.png</texture>
+  </animation>
+
+</PropertyList>
