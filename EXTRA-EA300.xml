@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================
+             EXTRA EA 300 For FlightGear
+         
+           Patrizio MELIS © 2017 2018 2019
+		   
+             GNU GENERAL PUBLIC LICENSE
+                Version 2, June 1991
+     ================================================
+-->
+
+<fdm_config name="EXTRA-EA300" version="2.1" release="GAMMA">
+	
+	<fileheader>
+		<author>Patrizio MELIS</author>
+		<version>V2.1</version>
+		<description>Extra EA 300 FDE</description>
+	</fileheader>
+
+	<metrics file="Systems/EA300-metrics"/>
+	<mass_balance file="Systems/EA300-mass-balance"/>
+	<ground_reactions file="Systems/EA300-ground-reactions"/>
+
+	<propulsion>
+		<engine file="lycoming-AEIO-540-L1B5">
+			<location unit="M">
+				<x>-2.31418</x>
+				<y>0</y>
+				<z>-0.00025</z>
+			</location>
+			<orient unit="DEG">
+				<roll>0</roll>
+				<pitch>0</pitch>
+				<yaw>0</yaw>
+			</orient>
+			<feed>1</feed>
+			<thruster file="MTV-9-B-C_C_200-15">
+				<location unit="M">
+					<x>-2.31418</x>
+					<y>0</y>
+					<z>-0.00025</z>
+				</location>
+				<orient unit="DEG">
+					<roll>0</roll>
+					<pitch>0</pitch>
+					<yaw>0</yaw>
+				</orient>
+				<sense>1</sense>
+				<p_factor>5</p_factor>
+			</thruster>
+		</engine>
+
+		<tank type="FUEL">    <!-- Left Wing Tank -->
+			<location unit="M">
+				<x>0.27916</x>
+				<y>-1.00334</y>
+				<z>-0.15037</z>
+			</location>
+			<capacity unit="LBS">96</capacity>
+			<contents unit="LBS">96</contents>
+			<type>AVGAS</type>
+			<priority>1</priority>
+		</tank>
+		<tank type="FUEL">    <!-- Center Tank -->
+			<location unit="M">
+				<x>0.27916</x>
+				<y>0</y>
+				<z>-0.15037</z>
+			</location>
+			<capacity unit="LBS">66.6</capacity>
+			<contents unit="LBS">66.6</contents>
+			<type>AVGAS</type>
+			<priority>1</priority>
+		</tank>
+		<tank type="FUEL">    <!-- Right Wing Tank -->
+			<location unit="M">
+				<x>0.27916</x>
+				<y>1.00334</y>
+				<z>-0.15037</z>
+			</location>
+			<capacity unit="LBS">96</capacity>
+			<contents unit="LBS">96</contents>
+			<type>AVGAS</type>
+			<priority>1</priority>
+		</tank>
+		<tank type="FUEL">    <!-- Engine Pipe -->
+			<location unit="M">
+				<x>0.27916</x>
+				<y>0</y>
+				<z>-0.15037</z>
+			</location>
+			<capacity unit="LBS">0.01</capacity>
+			<contents unit="LBS">0.00</contents>
+			<type>AVGAS</type>
+			<priority>1</priority>
+		</tank>
+	</propulsion>
+	
+	<system file="EA300-fcs"/>
+
+	<flight_control name="none"/>
+	<aerodynamics file="Systems/EA300-aerodynamics.xml"/>
+
+</fdm_config>
