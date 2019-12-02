@@ -290,7 +290,6 @@
     <object-name>Base-Lights</object-name>
     <object-name>Base-Lights-Mirror</object-name>
     <object-name>Bottom-Light-White</object-name>
-    <object-name>Canopy.000-OUT</object-name>
     <object-name>Canopy-Glass.OUT.001</object-name>
     <object-name>Canopy-Glass.OUT.002</object-name>
     <object-name>Elevator-L.000</object-name>
@@ -300,7 +299,6 @@
     <object-name>Elevator-R.002</object-name>
     <object-name>Elevator-R.003</object-name>
     <object-name>Exaust-IN</object-name>
-    <object-name>Exaust-OUT</object-name>
     <object-name>Fuselage.000</object-name>
     <object-name>Fuselage.001</object-name>
     <object-name>Fuselage.002</object-name>
@@ -309,10 +307,8 @@
     <object-name>Gear-F.000</object-name>
     <object-name>Gear-F.001</object-name>
     <object-name>Gear-R.000</object-name>
-    <object-name>Gear-R.001</object-name>
     <object-name>Gear-R.002</object-name>
     <object-name>Gear-R.003</object-name>
-    <object-name>Gear-R.004</object-name>
     <object-name>Gear-R.005</object-name>
     <object-name>Gear-R.006</object-name>
     <object-name>Intake.000</object-name>
@@ -324,7 +320,6 @@
     <object-name>Intake.006</object-name>
     <object-name>Prop0.000</object-name>
     <object-name>Prop0.001</object-name>
-    <object-name>Rivets.000</object-name>
     <object-name>Rudder-Base-Light</object-name>
     <object-name>Rudder-Base-Light-Mirror</object-name>
     <object-name>Rudder-Tie-L</object-name>
@@ -347,7 +342,6 @@
     <object-name>Shk-Abs.011</object-name>
     <object-name>Shk-Abs.012</object-name>
     <object-name>Shk-Abs.013</object-name>
-    <object-name>Shk-Abs.014</object-name>
     <object-name>Spinner.000</object-name>
     <object-name>Spinner.001</object-name>
     <object-name>Spinner.002</object-name>
@@ -361,9 +355,7 @@
     <object-name>Vertical-Stab.001</object-name>
     <object-name>Vertical-Stab.002</object-name>
     <object-name>Wheel-B.000</object-name>
-    <object-name>Wheel-B.001</object-name>
     <object-name>Wheel-B.002</object-name>
-    <object-name>Wheel-B.003</object-name>
     <object-name>Wheel-B.004</object-name>
     <object-name>Wheel-Cover.000</object-name>
     <object-name>Wheel-Cover.001</object-name>
