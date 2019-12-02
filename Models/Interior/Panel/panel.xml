@@ -17,14 +17,20 @@
     <!-- Opaque Objects List --> 
     <object-name>Panel.000</object-name>
     <object-name>Panel.001</object-name>
-    <object-name>Panel.002</object-name>	
+    <object-name>Panel.002</object-name>
+    <object-name>Panel.003</object-name>
+    <object-name>Panel.004</object-name>
+    <object-name>Panel.005</object-name>	
   <animation>
     <!-- Objects Linked To Texture -->
     <type>material</type>
     <object-name>Panel.000</object-name>
     <object-name>Panel.001</object-name>
     <object-name>Panel.002</object-name>
-    
+    <object-name>Panel.003</object-name>
+    <object-name>Panel.004</object-name>
+    <object-name>Panel.005</object-name>
+
     <property-base>sim/model/livery</property-base>
     <texture-prop>panel</texture-prop>
     <texture>panel.png</texture>
