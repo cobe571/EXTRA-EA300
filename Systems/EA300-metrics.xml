@@ -17,21 +17,21 @@
 	<vtailarea unit="FT2">14.96</vtailarea>
 	
 	<location name="AERORP" unit="M"> <!-- MAC: 1.404m -->
-		<x>0.27916</x>
-		<y>0</y>
-		<z>-0.15037</z>
+		<x>  0.27916 </x>
+		<y>  0.00000 </y>
+		<z> -0.15037 </z>
 	</location>
 
-	<location name="EYEPOINT" unit="M">
-		<x>0.63159</x>
-		<y>-0.2968</y>
-		<z>0.49974</z>
+	<location name="EYEPOINT" unit="IN">
+        <x> 120.96 </x>
+		<y>   0.00 </y>
+		<z>  40.00 </z>
 	</location>
 
 	<location name="VRP" unit="M">
-		<x>1.42477</x> <!-- The 3D model is not centered, but our JSBsim should be! -->
-		<y>0</y>
-		<z>0</z>
+		<x>  1.42477 </x> <!-- The 3D model is not centered, but our JSBsim should be! -->
+		<y>  0.00000 </y>
+		<z>  0.00000 </z>
 	</location>
 
 </metrics>

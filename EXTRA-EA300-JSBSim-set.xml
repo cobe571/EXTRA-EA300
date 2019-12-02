@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ================================================
+          EXTRA EA 300 FlightGear Set File
+         
+           Patrizio MELIS © 2017 2018 2019
+		   
+             GNU GENERAL PUBLIC LICENSE
+                Version 2, June 1991
+     ================================================
+-->
+
+<PropertyList>
+
+	<sim include="Systems/EA300-views.xml">
+		<aero>EXTRA-EA300-JSBSim</aero>
+		<aircraft-version>V2.1</aircraft-version>
+		<author>Patrizio MELIS (3D/Liveries, FDM, Systems)</author>
+		<chase-distance-m type="double" archive="y">-20.0</chase-distance-m>
+		<current-view>
+			<z-offset-default type="float">20.0</z-offset-default>
+			<z-offset-min-m type="float">10.0</z-offset-min-m>
+			<z-offset-max-m type="float">200.0</z-offset-max-m>
+		</current-view>
+		<description>EXTRA Aircraft EA300 (JSBSim)</description>
+		<flight-model>jsb</flight-model>
+		<hud n="0">
+			<enable3d n="0">false</enable3d>
+			<enable3d n="1">false</enable3d>
+		</hud>
+		<menubar>
+			<default>
+				<menu n="100">
+					<label>|</label>
+					<enabled type="bool">false</enabled>
+				</menu>
+				<menu n="101">
+					<label>System</label>
+					<enabled type="bool">true</enabled>
+					<item>
+						<label>Startup</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								setprop("/controls/engines/engine[0]/magnetos", 3);
+								setprop("/controls/engines/engine[0]/mixture", 1);
+								setprop("/controls/engines/engine[0]/throttle", 0);
+								setprop("/fdm/jsbsim/propulsion/set-running", 0); # This is the magic which "quickstarts" the engine
+							</script>
+						</binding>
+					</item>
+				</menu>
+				<menu n="102">
+					<label>Utilities</label>
+					<enabled type="bool">true</enabled>
+					<item>
+						<label>Select Livery</label>
+						<binding>
+							<command>nasal</command>
+							<script>aircraft.livery.dialog.toggle();</script>
+						</binding>
+					</item>
+				</menu>
+			</default>
+		</menubar>
+		<model>
+			<path archive="y">Aircraft/EXTRA-EA300/Models/EXTRA-EA300.xml</path>
+			<livery>
+				<file type="string">default</file>
+			</livery>
+		</model>
+		<multiplay>
+			<generic> 
+				<float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+				<float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+			</generic>
+		</multiplay>
+		<panel>
+			<visibility archive="y">false</visibility>
+		</panel>
+		<rating>
+			<FDM type="int">0</FDM>
+			<systems type="int">0</systems>
+			<cockpit type="int">3</cockpit>
+			<model type="int">5</model>
+		</rating>
+		<sound>
+			<path>Aircraft/EXTRA-EA300/Sounds/EA300-sound.xml</path>
+		</sound>
+		<startup>
+			<splash-texture>Aircraft/EXTRA-EA300/EA300-splash.png</splash-texture>
+		</startup>
+		<status>Alpha</status>
+		<tags>
+			<tag>aerobatic</tag>
+			<tag>monoplane</tag>
+			<tag>fixed-gear</tag>
+			<tag>single-engine</tag>
+			<tag>piston</tag>
+		</tags>
+	</sim>
+	
+	<consumables n="0">
+		<fuel>
+			<tank n="0"><name type="string">Left Wing</name></tank>
+			<tank n="1"><name type="string">Center</name></tank>
+			<tank n="2"><name type="string">Right Wing</name></tank>
+			<tank n="3"><name type="string">Engine Pipe</name></tank>
+		</fuel>
+	</consumables>
+	
+	<input n="0">
+		<keyboard n="0">
+			<key n="24">
+				<name>Ctrl-x</name>
+				<desc>Reset zoom to default</desc>
+				<binding>
+					<command>nasal</command>
+					<script>libraries.fovZoom(0);</script>
+				</binding>
+			</key>
+			<key n="88">
+				<name>X</name>
+				<desc>Increase field of view</desc>
+				<binding>
+					<command>nasal</command>
+					<script>libraries.fovZoom(1);</script>
+				</binding>
+			</key>
+			<key n="100">
+				<name>d</name>
+				<desc>Crew door</desc>
+				<binding>
+					<command>nasal</command>
+					<script>doors.crew.toggle();</script>
+				</binding>
+			</key>
+			<key n="120">
+				<name>x</name>
+				<desc>Decrease field of view</desc>
+				<binding>
+					<command>nasal</command>
+					<script>libraries.fovZoom(-1);</script>
+				</binding>
+			</key>
+		</keyboard>
+		<mice n="0">
+			<mouse n="0">
+				<mode n="0">
+					<button n="3">
+						<binding n="0">
+							<script></script>
+						</binding>
+						<binding n="1">
+							<condition>
+								<and>
+									<property>/devices/status/mice/mouse[0]/button[2]</property>
+									<not><property>/sim/mouse/right-button-mode-cycle-enabled</property></not>
+								</and>
+							</condition>
+							<command>nasal</command>
+							<script>libraries.fovZoom(-1);</script>
+						</binding>
+					</button>
+					<button n="4">
+						<binding n="0">
+							<script></script>
+						</binding>
+						<binding n="1">
+							<condition>
+								<and>
+									<property>/devices/status/mice/mouse[0]/button[2]</property>
+									<not><property>/sim/mouse/right-button-mode-cycle-enabled</property></not>
+								</and>
+							</condition>
+							<command>nasal</command>
+							<script>libraries.fovZoom(1);</script>
+						</binding>
+					</button>
+				</mode>
+			</mouse>
+		</mice>
+	</input>
+	
+	<payload n="0">
+		<weight n="0">
+		<name>Seat</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+			<min-lb type="double">90</min-lb>
+			<max-lb type="double">200</max-lb>
+		</weight>
+	</payload>
+	
+	<velocities n="0">
+		<groundspeed-kt type="double">0</groundspeed-kt>
+	</velocities>
+	
+	<nasal n="0">
+		<setup>
+			<script>aircraft.livery.init("Aircraft/EXTRA-EA300/Models/Liveries");</script>
+		</setup>
+		<libraries>
+			<file>Aircraft/EXTRA-EA300/Nasal/zoom-views.nas</file>
+		</libraries>
+	</nasal>
+
+</PropertyList>
