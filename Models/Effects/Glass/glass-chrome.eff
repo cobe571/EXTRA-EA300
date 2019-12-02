@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!--This effect file is provided as a conveniency for usage on transparent objects.
 If you also need to use a normalmap along with trasnparency check the model-combined-bump.eff
 that is provided alongside this effect.

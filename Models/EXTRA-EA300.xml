@@ -382,6 +382,19 @@
     <object-name>Wings.002</object-name>
     <object-name>Wings.003</object-name>
   </effect>
+  
+  <!-- Glass-Chrome Effect -->
+  <effect>
+    <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass-chrome</inherits-from>
+    <object-name>Canopy.000-OUT</object-name>
+    <object-name>Exaust-OUT</object-name>
+    <object-name>Gear-R.001</object-name>
+	<object-name>Gear-R.004</object-name>
+    <object-name>Rivets.000</object-name>
+    <object-name>Shk-Abs.014</object-name>
+    <object-name>Wheel-B.001</object-name>
+	<object-name>Wheel-B.003</object-name>
+  </effect>
 
   <!--  Rembrandt  -->
   <effect>
@@ -739,9 +752,9 @@
     </offsets>
   </model>
 
-  <!--  Canopy  -->
+  <!--  System Canopy OUT  -->
   <animation>
-    <name>All-Canopy</name>
+    <name>All-Canopy-OUT</name>
     <object-name>Canopy.000-OUT</object-name>
     <object-name>Canopy-Glass.OUT.000</object-name>
     <object-name>Canopy-Glass.OUT.001</object-name>
@@ -750,7 +763,7 @@
   
   <animation>
     <type>pick</type>
-    <object-name>All-Canopy</object-name>
+    <object-name>All-Canopy-OUT</object-name>
     <visible>true</visible>
     <action>
       <button>0</button>
@@ -764,8 +777,8 @@
   
   <animation>
     <type>rotate</type>
-    <object-name>All-Canopy</object-name>
-    <property>/sim/multiplay/generic/float[0]</property>
+    <object-name>All-Canopy-OUT</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>  0 </dep></entry>
       <entry><ind> 1 </ind><dep> -85 </dep></entry>
