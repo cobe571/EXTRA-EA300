@@ -741,15 +741,16 @@
 
   <!--  Canopy  -->
   <animation>
-    <name>Canopy</name>
+    <name>All-Canopy</name>
     <object-name>Canopy.000-OUT</object-name>
+    <object-name>Canopy-Glass.OUT.000</object-name>
     <object-name>Canopy-Glass.OUT.001</object-name>
     <object-name>Canopy-Glass.OUT.002</object-name>
   </animation>
   
   <animation>
     <type>pick</type>
-    <object-name>Canopy</object-name>
+    <object-name>All-Canopy</object-name>
     <visible>true</visible>
     <action>
       <button>0</button>
@@ -767,15 +768,15 @@
     <property>/sim/multiplay/generic/float[0]</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>  0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 85 </dep></entry>
+      <entry><ind> 1 </ind><dep> -85 </dep></entry>
     </interpolation>
     <axis>
-      <x1-m> -6.06352 </x1-m>
-      <y1-m> -0.41168 </y1-m>
-      <z1-m>  1.74012 </z1-m>
-      <x2-m> -5.17260 </x2-m>
-      <y2-m> -0.44389 </y2-m>
-      <z2-m>  1.84379 </z2-m>
+      <x1-m>0.45368</x1-m>
+      <y1-m>0.41286</y1-m>
+      <z1-m>0.26878</z1-m>
+      <x2-m>1.58322</x2-m>
+      <y2-m>0.36345</y2-m>
+      <z2-m>0.20313</z2-m>
     </axis>
   </animation>
 
