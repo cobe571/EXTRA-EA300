@@ -22,7 +22,7 @@
 		<z> -0.15037 </z>
 	</location>
 
-	<location name="EYEPOINT" unit="IN">
+    <location name="EYEPOINT" unit="IN">
         <x> 120.96 </x>
 		<y>   0.00 </y>
 		<z>  40.00 </z>
