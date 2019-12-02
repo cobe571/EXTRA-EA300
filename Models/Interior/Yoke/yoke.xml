@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ======================================
+       EXTRA EA 300 Yoke Animation File
+         
+        Patrizio MELIS © 2017 2018 2019
+		   
+          GNU GENERAL PUBLIC LICENSE
+            Version 2, June 1991
+     ===================================== -->
+
+<PropertyList>
+
+  <path>yoke.ac</path>
+  
+  <!-- Object List -->
+
+  <animation>
+    <object-name>Yoke.000</object-name>
+    <object-name>Yoke.001</object-name>
+	<object-name>Yoke.002</object-name>
+    <object-name>Yoke.003</object-name>
+	<object-name>Yoke.004</object-name>
+    <object-name>Yoke.005</object-name>
+	<object-name>Yoke.006</object-name>
+    <object-name>Yoke.007</object-name>
+	<object-name>Yoke.008</object-name>
+	<object-name>Yoke.009</object-name>
+	<object-name>Yoke.010</object-name>
+  </animation>
+ 
+  <animation>
+    <name>Complete-Yoke</name>
+    <object-name>Yoke.000</object-name>
+    <object-name>Yoke.001</object-name>
+	<object-name>Yoke.002</object-name>
+    <object-name>Yoke.003</object-name>
+	<object-name>Yoke.004</object-name>
+    <object-name>Yoke.005</object-name>
+	<object-name>Yoke.006</object-name>
+    <object-name>Yoke.007</object-name>
+	<object-name>Yoke.008</object-name>
+    <object-name>Yoke.009</object-name>
+	<object-name>Yoke.010</object-name>
+	
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Complete-Yoke</object-name>
+    <property>controls/flight/elevator</property>
+		<factor>9</factor>
+		<center>
+			<x-m> 0.03 </x-m>
+			<y-m> 0.00 </y-m>
+			<z-m> 0.05 </z-m>
+		</center>
+		<axis>
+			<x>  0 </x>
+			<y> -1 </y>
+			<z>  0 </z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Complete-Yoke</object-name>
+	<property>controls/flight/aileron</property>
+		<factor>9</factor>
+		<center>
+			<x-m> 0.03 </x-m>
+			<y-m> 0.00 </y-m>
+			<z-m> 0.05 </z-m>
+		</center>
+		<axis>
+			<x> -1 </x>
+			<y>  0 </y>
+			<z>  0 </z>
+		</axis>
+	</animation>
+
+</PropertyList>

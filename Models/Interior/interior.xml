@@ -11,59 +11,26 @@
 
 <PropertyList>
 
-  <path>interior.ac</path>
+  <path>interior-new.ac</path>
 
+  <!-- Opaque Objects List -->
   <animation>
-    <!-- Opaque Objects List -->
     <object-name>Inner-Cage.000</object-name>
     <object-name>Interior-Shell.000</object-name>
     <object-name>Interior-Shell.001</object-name>
     <object-name>Interior-Shell.002</object-name>
     <object-name>Interior-Tickness</object-name>
-    <object-name>Panel.000</object-name>
+	<object-name>Panel.000</object-name>
     <object-name>Panel.001</object-name>
     <object-name>Panel.002</object-name>
-    <object-name>Seat-Support-Front</object-name>
-    <object-name>Seat-Support-Rear</object-name>
-    <!-- Trasparent Objects List -->
-    <object-name>  </object-name>  
-  </animation>
-
-  <animation>
-    <!-- Objects Linked To Texture -->
-    <type>material</type>
-    <object-name>Inner-Cage.000</object-name>
-    <object-name>Interior-Shell.000</object-name>
-    <object-name>Interior-Shell.001</object-name>
-    <object-name>Interior-Shell.002</object-name>
-    <object-name>Interior-Tickness</object-name>
-	
-    <property-base>sim/model/livery</property-base>
-    <texture-prop>interior</texture-prop>
-    <texture>interior.jpg</texture>
-  </animation>
-  
-  <animation>
-    <!-- Objects Linked To Texture -->
-    <type>material</type>
-    <object-name>Panel.000</object-name>
-    <object-name>Panel.001</object-name>
-    <object-name>Panel.002</object-name>
-	
-    <property-base>sim/model/livery</property-base>
-    <texture-prop>panel</texture-prop>
-    <texture>panel.png</texture>
-  </animation>
-  
-  <animation>
-    <!-- Objects Linked To Texture -->
-    <type>material</type>
+    <object-name>Panel.003</object-name>
+    <object-name>Panel.004</object-name>
+    <object-name>Panel.005</object-name>
     <object-name>Seat-Support-Front</object-name>
     <object-name>Seat-Support-Rear</object-name>
     
-    <property-base>sim/model/livery</property-base>
-    <texture-prop>seat</texture-prop>
-    <texture>seat.png</texture>
+	<!-- Trasparent Objects List -->
+    <object-name>  </object-name>  
   </animation>
 
   <!-- Working for Rembrandt -->
@@ -115,18 +82,18 @@
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Yoke/yoke.xml</path>
     <offsets>
-      <x-m> -2.80618 </x-m>
-      <y-m> -0.53581 </y-m>
-      <z-m> -0.73411 </z-m>
+      <x-m>  1.33178 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.42198 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Yoke/yoke.xml</path>
     <offsets>
-      <x-m> -2.80618 </x-m>
-      <y-m>  0.53581 </y-m>
-      <z-m> -0.73411 </z-m>
+      <x-m>  0.41008 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.54693 </z-m>
     </offsets>
   </model>
 
@@ -150,7 +117,6 @@
   </model>
 
   <!-- Pedals -->
-
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Pedals/pedals.xml</path>
     <offsets>
