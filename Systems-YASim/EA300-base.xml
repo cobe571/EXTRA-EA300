@@ -3,7 +3,7 @@
 <!-- =============================================
           EXTRA EA 300 FlightGear Base File
 
-           Patrizio MELIS © 2017 2018 2019
+               Patrizio MELIS © 2019
 		   
              GNU GENERAL PUBLIC LICENSE
                 Version 2, June 1991
@@ -17,20 +17,38 @@
     <fuel-fraction>0.8</fuel-fraction>
 
     <startup>
-     <splash-texture>Aircraft/EXTRA-EA300/EA300-splash.png</splash-texture>
+        <splash-texture>Aircraft/EXTRA-EA300/EA300-splash.png</splash-texture>
     </startup>
 
     <model>
-      <path archive="y">Aircraft/EXTRA-EA300/Models/EXTRA-EA300-YASim.xml</path>
-      <livery>
-        <file type="string">default</file>
-      </livery>
+        <path archive="y">Aircraft/EXTRA-EA300/Models/EXTRA-EA300-YASim.xml</path>
+        <livery>
+            <file type="string">default</file>
+        </livery>
     </model>
 
     <sound>
-      <path>Aircraft/EXTRA-EA300/Sounds/EA300-sound.xml</path>
+        <path>Aircraft/EXTRA-EA300/Sounds/EA300-sound.xml</path>
     </sound>
-    
+
+    <systems>
+        <electrical>
+            <path>Aircraft/EXTRA-EA300/Systems-YASim/EA300-generic-electrical.xml</path>
+        </electrical>
+
+        <instrumentation>
+            <path>Aircraft/EXTRA-EA300/Systems-YASim/EA300-instrumentation.xml</path>
+        </instrumentation>
+
+        <autopilot>
+            <path>Aircraft/EXTRA-EA300/Systems-YASim/EA300-autopilotH.xml</path>
+        </autopilot>
+
+        <autopilot n="101">
+            <path>Aircraft/EXTRA-EA300/Systems-YASim/EA300-glass-rain.xml</path>
+        </autopilot>        
+    </systems>
+
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
@@ -59,27 +77,27 @@
         <string n="9" type="string" />
       </generic>
     </multiplay>
-    
+
     <help include="EA300-help.xml"/>
 
     <menubar include="../Dialogs/EA300-menu.xml"/>
 
   </sim>
 
-  <input include="EA300-keyboard.xml"/>
-  
-  <controls include="EA300-controls.xml"/>
-  
-  <yasim include="yasim.xml"/>
+    <input include="EA300-keyboard.xml"/>
 
-  <engines include="EA300-engines.xml"/>
+    <controls include="EA300-controls.xml"/>
+
+    <yasim include="yasim.xml"/>
+
+    <engines include="EA300-engines.xml"/>
 
   <nasal>
     <doors>
-      <file>Aircraft/EXTRA-EA300/Nasal/doors.nas</file>
+        <file>Aircraft/EXTRA-EA300/Nasal/doors.nas</file>
     </doors>
     <EA300>
-      <file>Aircraft/EXTRA-EA300/Nasal/liveries.nas</file>
+        <file>Aircraft/EXTRA-EA300/Nasal/liveries.nas</file>
     </EA300>
   </nasal>
 

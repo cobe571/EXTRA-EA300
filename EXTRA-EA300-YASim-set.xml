@@ -3,7 +3,7 @@
 <!-- ================================================
           EXTRA EA 300 FlightGear Set File
          
-           Patrizio MELIS © 2017 2018 2019
+               Patrizio MELIS © 2019
 		   
              GNU GENERAL PUBLIC LICENSE
                 Version 2, June 1991
@@ -13,12 +13,12 @@
 <PropertyList include="Systems-YASim/EA300-base.xml">
 
   <sim>
-    
+
     <description>EXTRA Aircraft EA 300 (YASim)</description>
     <author>Patrizio MELIS (3D/FDM/Liveries)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
-    
+
     <flight-model>yasim</flight-model>
     <aero>Systems-YASim/EA300-yasim</aero>
 
@@ -29,7 +29,7 @@
       <tag>single-engine</tag>
       <tag>piston</tag>
     </tags>
-    
+
     <rating>
       <FDM type="int">     0 </FDM>
       <systems type="int"> 0 </systems>

@@ -15,9 +15,9 @@
   <view n="0">
     <internal archive="y">true</internal>
     <config>
-     <x-offset-m archive="y"> 0.00000 </x-offset-m> <!-- Right -->
-     <y-offset-m archive="y"> 0.41721 </y-offset-m> <!-- Up    -->
-     <z-offset-m archive="y"> 1.70527 </z-offset-m> <!-- Back  -->
+     <x-offset-m archive="y"> 0.00000 </x-offset-m> <!-- Left/Right -->
+     <y-offset-m archive="y"> 0.50800 </y-offset-m> <!-- Up/Down    -->
+     <z-offset-m archive="y"> 1.70527 </z-offset-m> <!-- Front/Back -->
      <pitch-offset-deg> -5 </pitch-offset-deg>
       <default-field-of-view-deg> 80 </default-field-of-view-deg>
     </config>
@@ -67,9 +67,9 @@
 	 <from-model type="bool">true</from-model>
      <from-model-idx type="int">0</from-model-idx>
      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-     <x-offset-m archive="y"> 0.00000 </x-offset-m> <!-- Right -->
-     <y-offset-m archive="y"> 0.25743 </y-offset-m> <!-- Up    -->
-     <z-offset-m archive="y"> 0.63856 </z-offset-m> <!-- Back  -->
+     <x-offset-m archive="y"> 0.00000 </x-offset-m> <!-- Left/Right -->
+     <y-offset-m archive="y"> 0.25743 </y-offset-m> <!-- Up/Down    -->
+     <z-offset-m archive="y"> 0.63856 </z-offset-m> <!-- Front/Back -->
      <pitch-offset-deg> -5 </pitch-offset-deg>
       <default-field-of-view-deg> 80 </default-field-of-view-deg>
     </config>
@@ -83,9 +83,9 @@
       <from-model type="bool">true</from-model>
       <from-model-idx type="int">0</from-model-idx>
       <ground-level-nearplane-m type="double">0.01</ground-level-nearplane-m>
-      <x-offset-m archive="y"> 0.00000 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y"> 2.00000 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> 9.22700 </z-offset-m> <!-- Back  -->
+      <x-offset-m archive="y"> 0.00000 </x-offset-m> <!-- Left/Right -->
+      <y-offset-m archive="y"> 2.00000 </y-offset-m> <!-- Up/Down    -->
+      <z-offset-m archive="y"> 9.22700 </z-offset-m> <!-- Front/Back -->
       <pitch-offset-deg> -5 </pitch-offset-deg>
       <default-field-of-view-deg type="double"> 30 </default-field-of-view-deg>
     </config>
