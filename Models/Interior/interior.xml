@@ -81,26 +81,6 @@
     </offsets>
   </model> -->
 
-  <!-- Panel 
-  <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/panel.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
-    </offsets>
-  </model> -->
-
-  <!-- Seat -->
-  <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Seat/seat.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
-    </offsets>
-  </model>
-
   <!-- Yoke -->
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Yoke/yoke.xml</path>
@@ -157,5 +137,80 @@
       <z-m> -0.64376 </z-m>
     </offsets>
   </model> -->
+  
+  <!--  Instruments Position Over The Panel  -->
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Alt/alt.xml</path>
+    <offsets>
+      <x-m> 0.017 </x-m>
+      <y-m> 0.091 </y-m>
+      <z-m> 0.150 </z-m>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Hdg/hdg.xml</path>
+    <offsets>
+      <x-m>  0.017 </x-m>
+      <y-m> -0.004 </y-m>
+      <z-m>  0.070 </z-m>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Man/man.xml</path>
+    <offsets>
+      <x-m>  0.017 </x-m>
+      <y-m>  0.096 </y-m>
+      <z-m>  0.070 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.017 </x-m>
+      <y-m>  -0.099 </y-m>
+      <z-m>  0.150 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.017 </x-m>
+      <y-m> -0.099 </y-m>
+      <z-m>  0.069 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.022 </x-m>
+      <y-m> -0.198 </y-m>
+      <z-m>  0.055 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Oil/oil.xml</path>
+    <offsets>
+      <x-m>  0.017 </x-m>
+      <y-m> 0.189 </y-m>
+      <z-m>  0.055 </z-m>
+    </offsets>
+  </model>
+
+   <!-- instruments position
+  badin : 0.025 -0.099 0.150
+  alti  : 0.017  0.091 0.150
+  vario : 0.025 -0.099 0.069
+  cap   : 0.025 -0.004 0.070
+  mp/fuel:0.025  0.096 0.070
+  turn  : 0.025 -0.198 0.053
+  oil   : 0.023  0.189 0.055
+  fuel  : 0.025 -0.115 -0.128
+  -->
   
 </PropertyList>
