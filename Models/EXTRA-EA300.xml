@@ -45,8 +45,9 @@
     </unload>
   </nasal>
 
+  <!-- Objects Full List -->
   <animation>
-    <!--  Object Opaque  -->
+    <!--  Opaque Objects List  -->
     <object-name>Aleiron-L.000</object-name>
     <object-name>Aleiron-L.001</object-name>
     <object-name>Aleiron-L.002</object-name>
@@ -144,8 +145,7 @@
     <object-name>Wings.001</object-name>
     <object-name>Wings.002</object-name>
     <object-name>Wings.003</object-name>
-
-    <!--  Object Transparent  -->
+    <!-- Transparent Objects List -->
     <object-name>Bottom-Glass-White</object-name>
     <object-name>Canopy-Glass.OUT.000</object-name>
     <object-name>Fuselage-Glass.000</object-name>
@@ -156,6 +156,7 @@
     <object-name>Rudder-Top-Glass-Red</object-name>	
   </animation>
 
+  <!-- Objects Linked To The Main Texture -->
   <animation>
     <type>material</type>
     <object-name>Aleiron-L.000</object-name>
@@ -192,6 +193,7 @@
     <texture>texture.jpg</texture>
   </animation>
 
+  <!-- Objects Linked To The Gear Texture -->
   <animation>
     <type>material</type>
     <object-name>Aleiron-L.001</object-name>
@@ -251,6 +253,7 @@
     <texture>gear.jpg</texture>
   </animation>
 
+  <!-- Objects Linked To The Propeller Texture -->
   <animation>
     <type>material</type>
     <object-name>Exaust-IN</object-name>
@@ -271,6 +274,7 @@
     <texture>propeller.jpg</texture>
   </animation>
 
+  <!-- Objects Linked To The Prop-Blur Texture -->
   <animation>
     <type>material</type>
     <object-name>PropBlur0</object-name>
@@ -281,9 +285,9 @@
     <texture>prop.png</texture>
   </animation>
 
-  <!--  Effects Reflect  -->
+  <!-- Effects Reflect Over Fuselage -->
   <effect>
-    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <inherits-from>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/Fuselagereflect</inherits-from>
     <object-name>Aleiron-L.000</object-name>
     <object-name>Aleiron-L.001</object-name>
     <object-name>Aleiron-L.002</object-name>
@@ -388,7 +392,7 @@
 	<object-name>Wheel-B.003</object-name>
   </effect>
 
-  <!--  Rembrandt  -->
+  <!--  Rembrandt Effect -->
   <effect>
     <inherits-from>Aircraft/EXTRA-EA300/Models/Effects/Glass/glass</inherits-from>
     <object-name>Bottom-Glass-White</object-name>
@@ -770,7 +774,7 @@
   <animation>
     <type>rotate</type>
     <object-name>All-Canopy-OUT</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
+    <property>/sim/multiplay/generic/float[0]</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>  0 </dep></entry>
       <entry><ind> 1 </ind><dep> -85 </dep></entry>
