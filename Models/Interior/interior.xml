@@ -11,7 +11,7 @@
 
 <PropertyList>
 
-  <path>interior-new.ac</path>
+  <path>interior.ac</path>
 
   <!-- Opaque Objects List -->
   <animation>
@@ -37,6 +37,29 @@
   <effect>
     <inherits-from>Aircraft/EXTRA-EA300/Models/Effects/Glass/glass</inherits-from>
     <object-name>  </object-name>
+  </effect>
+  
+  <!-- Glass-Chrome Effect -->
+  <effect>
+    <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass-chrome</inherits-from>
+    <object-name>Interior-Tickness</object-name>
+  </effect>
+  
+  <!--  Effects Reflect  -->
+  <effect>
+    <inherits-from>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/Fuselagereflect</inherits-from>
+    <object-name>Inner-Cage.000</object-name>
+    <object-name>Interior-Shell.000</object-name>
+    <object-name>Interior-Shell.001</object-name>
+    <object-name>Interior-Shell.002</object-name>
+	<object-name>Panel.000</object-name>
+    <object-name>Panel.001</object-name>
+    <object-name>Panel.002</object-name>
+    <object-name>Panel.003</object-name>
+    <object-name>Panel.004</object-name>
+    <object-name>Panel.005</object-name>
+    <object-name>Seat-Support-Front</object-name>
+    <object-name>Seat-Support-Rear</object-name>
   </effect>
 
   <!-- Pilots
