@@ -13,10 +13,14 @@
 <PropertyList>
   
   <title>EXTRA Aircraft EA300</title>
-  <line>______________________________________________</line> 
+  <line>______________________</line> 
   <key>
     <name>d</name>
     <desc>Open/Close canopy</desc>
   </key>
+
+  <text>
+    
+  </text>
   
 </PropertyList>
