@@ -47,9 +47,9 @@
     <object-name>Panel.005</object-name>
   </effect>
 
-  <!--  Instruments Position on Panel  -->
+  <!--  Instruments Position Over The Panel  -->
   <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Panel/Instruments/Alt/alt.xml</path>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Instruments/Alt/alt.xml</path>
     <offsets>
       <x-m> 0.017 </x-m>
       <y-m> 0.091 </y-m>
@@ -58,7 +58,7 @@
   </model>
 
    <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Panel/Instruments/Hdg/hdg.xml</path>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Instruments/Hdg/hdg.xml</path>
     <offsets>
       <x-m>  0.017 </x-m>
       <y-m> -0.004 </y-m>
@@ -67,7 +67,7 @@
   </model>
   
    <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Panel/Instruments/Man/man.xml</path>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Instruments/Man/man.xml</path>
     <offsets>
       <x-m>  0.017 </x-m>
       <y-m>  0.096 </y-m>
@@ -76,7 +76,7 @@
   </model>
   
   <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Panel/Instruments/Asi/asi.xml</path>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Instruments/Asi/asi.xml</path>
     <offsets>
       <x-m>  0.017 </x-m>
       <y-m>  -0.099 </y-m>
@@ -85,7 +85,7 @@
   </model>
   
   <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Panel/Instruments/Vsi/vsi.xml</path>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Instruments/Vsi/vsi.xml</path>
     <offsets>
       <x-m>  0.017 </x-m>
       <y-m> -0.099 </y-m>
@@ -94,7 +94,7 @@
   </model>
   
   <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Panel/Instruments/Turn/turn.xml</path>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Instruments/Turn/turn.xml</path>
     <offsets>
       <x-m>  0.022 </x-m>
       <y-m> -0.198 </y-m>
@@ -103,7 +103,7 @@
   </model>
 
   <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Panel/Instruments/Oil/oil.xml</path>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Instruments/Oil/oil.xml</path>
     <offsets>
       <x-m>  0.017 </x-m>
       <y-m> 0.189 </y-m>
