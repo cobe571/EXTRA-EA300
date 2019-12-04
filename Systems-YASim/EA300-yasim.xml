@@ -25,6 +25,7 @@ Crew                         :  One pilot
 Capacity                     :  Two
 
 -->
+
 <airplane mass="1470" version="YASIM_VERSION_CURRENT">
 
   <!-- Approach configuration -->
