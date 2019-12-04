@@ -64,7 +64,7 @@
 			</default>
 		</menubar>
 		<model>
-			<path archive="y">Aircraft/EXTRA-EA300/Models/EXTRA-EA300.xml</path>
+			<path archive="y">Aircraft/EXTRA-EA300/Models/EXTRA-EA300-JSB-M.xml</path>
 			<livery>
 				<file type="string">default</file>
 			</livery>
