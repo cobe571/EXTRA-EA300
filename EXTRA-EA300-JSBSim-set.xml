@@ -12,93 +12,110 @@
 
 <PropertyList>
 
-	<sim include="Systems/EA300-views.xml">
-		<aero>EXTRA-EA300-JSBSim</aero>
-		<aircraft-version>V2.1</aircraft-version>
-		<author>Patrizio MELIS (3D/Liveries, FDM, Systems)</author>
-		<chase-distance-m type="double" archive="y">-20.0</chase-distance-m>
-		<current-view>
-			<z-offset-default type="float">20.0</z-offset-default>
-			<z-offset-min-m type="float">10.0</z-offset-min-m>
-			<z-offset-max-m type="float">200.0</z-offset-max-m>
-		</current-view>
-		<description>EXTRA Aircraft EA300 (JSBSim)</description>
-		<flight-model>jsb</flight-model>
-		<hud n="0">
-			<enable3d n="0">false</enable3d>
-			<enable3d n="1">false</enable3d>
-		</hud>
-		<menubar>
-			<default>
-				<menu n="100">
-					<label>|</label>
-					<enabled type="bool">false</enabled>
-				</menu>
-				<menu n="101">
-					<label>System</label>
-					<enabled type="bool">true</enabled>
-					<item>
-						<label>Startup</label>
-						<binding>
-							<command>nasal</command>
-							<script>
-								setprop("/controls/engines/engine[0]/magnetos", 3);
-								setprop("/controls/engines/engine[0]/mixture", 1);
-								setprop("/controls/engines/engine[0]/throttle", 0);
-								setprop("/fdm/jsbsim/propulsion/set-running", 0); # This is the magic which "quickstarts" the engine
-							</script>
-						</binding>
-					</item>
-				</menu>
-				<menu n="102">
-					<label>Utilities</label>
-					<enabled type="bool">true</enabled>
-					<item>
-						<label>Select Livery</label>
-						<binding>
-							<command>nasal</command>
-							<script>aircraft.livery.dialog.toggle();</script>
-						</binding>
-					</item>
-				</menu>
-			</default>
-		</menubar>
-		<model>
-			<path archive="y">Aircraft/EXTRA-EA300/Models/EXTRA-EA300-JSB-M.xml</path>
-			<livery>
-				<file type="string">default</file>
-			</livery>
-		</model>
-		<multiplay>
-			<generic> 
-				<float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
-				<float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
-			</generic>
-		</multiplay>
-		<panel>
-			<visibility archive="y">false</visibility>
-		</panel>
-		<rating>
-			<FDM type="int">0</FDM>
-			<systems type="int">0</systems>
-			<cockpit type="int">3</cockpit>
-			<model type="int">5</model>
-		</rating>
-		<sound>
-			<path>Aircraft/EXTRA-EA300/Sounds/EA300-sound.xml</path>
-		</sound>
-		<startup>
-			<splash-texture>Aircraft/EXTRA-EA300/EA300-splash.png</splash-texture>
-		</startup>
-		<status>Alpha</status>
-		<tags>
-			<tag>aerobatic</tag>
-			<tag>monoplane</tag>
-			<tag>fixed-gear</tag>
-			<tag>single-engine</tag>
-			<tag>piston</tag>
-		</tags>
-	</sim>
+ <sim include="Systems/EA300-views.xml">
+
+    <description>EXTRA Aircraft EA300 (JSBSim)</description>
+    <author>Patrizio MELIS (3D/Liveries, FDM, Systems)</author>
+    <aircraft-version>V2.2</aircraft-version>
+    <status>Alpha</status>    
+
+    <flight-model>jsb</flight-model>
+    <aero>EXTRA-EA300-JSBSim</aero>
+
+    <tags>
+        <tag>aerobatic</tag>
+        <tag>monoplane</tag>
+        <tag>fixed-gear</tag>
+        <tag>single-engine</tag>
+        <tag>piston</tag>
+    </tags>
+
+    <rating>
+        <FDM type="int">       0 </FDM>
+        <systems type="int">   0 </systems>
+        <cockpit type="int">   3 </cockpit>
+        <model type="int">     4 </model>
+    </rating>
+
+    <startup>
+        <splash-texture>Aircraft/EXTRA-EA300/EA300-splash.png</splash-texture>
+    </startup>
+
+    <model>
+        <path archive="y">Aircraft/EXTRA-EA300/Models/EXTRA-EA300-JSB-M.xml</path>
+        <livery>
+            <file type="string">default</file>
+        </livery>
+    </model>
+
+    <sound>
+        <path>Aircraft/EXTRA-EA300/Sounds/EA300-sound.xml</path>
+    </sound>
+
+    <panel>
+        <visibility archive="y">false</visibility>
+    </panel>
+
+    <multiplay>
+        <generic> 
+            <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+            <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        </generic>
+    </multiplay>
+
+    <chase-distance-m type="double" archive="y">-20.0</chase-distance-m>
+    <current-view>
+        <z-offset-default type="float">20.0</z-offset-default>
+        <z-offset-min-m type="float">10.0</z-offset-min-m>
+        <z-offset-max-m type="float">200.0</z-offset-max-m>
+    </current-view>
+	
+    <hud n="0">
+        <enable3d n="0">false</enable3d>
+        <enable3d n="1">false</enable3d>
+    </hud>
+
+    <menubar>
+        <default>
+            <menu n="100">
+                <label>|</label>
+                <enabled type="bool">false</enabled>
+            </menu>
+
+            <menu n="101">
+                <label>System</label>
+                <enabled type="bool">true</enabled>
+                <item>
+                <label>Startup</label>
+                <binding>
+                    <command>nasal</command>
+                        <script>
+                            setprop("/controls/engines/engine[0]/magnetos", 3);
+                            setprop("/controls/engines/engine[0]/mixture", 1);
+                            setprop("/controls/engines/engine[0]/throttle", 0);
+                            setprop("/fdm/jsbsim/propulsion/set-running", 0); # This is the magic which "quickstarts" the engine
+                        </script>
+                </binding>
+                </item>
+            </menu>
+
+            <menu n="102">
+                <label>Utilities</label>
+                <enabled type="bool">true</enabled>
+                <item>
+                <label>Select Livery</label>
+                <binding>
+                    <command>nasal</command>
+                        <script>aircraft.livery.dialog.toggle();</script>
+                </binding>
+                </item>
+            </menu>
+
+        </default>
+
+    </menubar>
+		
+  </sim>
 	
 	<consumables n="0">
 		<fuel>
