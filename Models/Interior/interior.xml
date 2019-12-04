@@ -83,7 +83,7 @@
 
   <!-- Panel 
   <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Panel/panel.xml</path>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/panel.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
