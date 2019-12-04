@@ -10,7 +10,7 @@
      ================================================
 -->
 
-<fdm_config name="EXTRA-EA300-JSBSim" version="2.1" release="GAMMA">
+<fdm_config name="EXTRA-EA300-JSBSim" version="2.2" release="ALPHA">
 	
 	<fileheader>
 		<author>Patrizio MELIS</author>
