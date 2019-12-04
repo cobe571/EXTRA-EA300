@@ -8,12 +8,12 @@
     <texture n="5">
       <type>cubemap</type>
       <images>
-        <positive-x>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/CubeMaps/real.blue-sky/fair-sky_px.png</positive-x>
-        <negative-x>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/CubeMaps/real.blue-sky/fair-sky_nx.png</negative-x>
-        <positive-y>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/CubeMaps/real.blue-sky/fair-sky_py.png</positive-y>
-        <negative-y>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/CubeMaps/real.blue-sky/fair-sky_ny.png</negative-y>
-        <positive-z>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/CubeMaps/real.blue-sky/fair-sky_pz.png</positive-z>
-        <negative-z>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/CubeMaps/real.blue-sky/fair-sky_nz.png</negative-z>
+        <positive-x>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/fair-sky_px.png</positive-x>
+        <negative-x>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/fair-sky_nx.png</negative-x>
+        <positive-y>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/fair-sky_py.png</positive-y>
+        <negative-y>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/fair-sky_ny.png</negative-y>
+        <positive-z>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/fair-sky_pz.png</positive-z>
+        <negative-z>Aircraft/EXTRA-EA300/Models/Effects/Fuselage/fair-sky_nz.png</negative-z>
       </images>
     </texture>
     <texture n="6">
