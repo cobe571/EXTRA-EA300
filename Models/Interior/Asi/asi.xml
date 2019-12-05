@@ -1,50 +1,56 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- Based on HCI Lab - University of Udin work -->
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList>
-  
+
   <path>asi.ac</path>
 
   <animation>
     <object-name>fond</object-name>
-    <object-name>visses</object-name>
     <object-name>face</object-name>
-    <object-name>cache</object-name>
-    <object-name>mach</object-name>
     <object-name>needle</object-name>
-    
+    <object-name>bouton</object-name>
+
     <object-name>vitre</object-name>
   </animation>
-  
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
   <animation>
     <type>material</type>
     <object-name>face</object-name>
-    <object-name>cache</object-name>
-    <object-name>mach</object-name>
     <object-name>needle</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
-  
+
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
     <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
     <interpolation>
-      <entry><ind>   0 </ind><dep>   0.0 </dep></entry>
-      <entry><ind>  50 </ind><dep>  18.6 </dep></entry>
-      <entry><ind> 100 </ind><dep>  69.0 </dep></entry>
-      <entry><ind> 150 </ind><dep> 116.3 </dep></entry>
-      <entry><ind> 200 </ind><dep> 169.3 </dep></entry>
-      <entry><ind> 300 </ind><dep> 219.0 </dep></entry>
-      <entry><ind> 400 </ind><dep> 269.0 </dep></entry>
-      <entry><ind> 500 </ind><dep> 319.5 </dep></entry>
-      <entry><ind> 600 </ind><dep> 336.0 </dep></entry>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  50 </ind><dep>  10 </dep></entry>
+      <entry><ind> 100 </ind><dep>  63 </dep></entry>
+      <entry><ind> 150 </ind><dep> 119 </dep></entry>
+      <entry><ind> 200 </ind><dep> 163 </dep></entry>
+      <entry><ind> 300 </ind><dep> 228 </dep></entry>
+      <entry><ind> 400 </ind><dep> 280 </dep></entry>
+      <entry><ind> 500 </ind><dep> 320 </dep></entry>
+      <entry><ind> 600 </ind><dep> 353 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
@@ -52,41 +58,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-  
-  <!-- rotazione indicatore numero di Mach relativa alla velocità attuale -->
-  <animation>
-    <type>rotate</type>
-    <object-name>mach</object-name>
-    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
-    <interpolation>
-      <entry><ind>   0 </ind><dep>   0.0 </dep></entry>
-      <entry><ind>  50 </ind><dep>  18.6 </dep></entry>
-      <entry><ind> 100 </ind><dep>  69.0 </dep></entry>
-      <entry><ind> 150 </ind><dep> 116.3 </dep></entry>
-      <entry><ind> 200 </ind><dep> 169.3 </dep></entry>
-      <entry><ind> 300 </ind><dep> 219.0 </dep></entry>
-      <entry><ind> 400 </ind><dep> 269.0 </dep></entry>
-      <entry><ind> 500 </ind><dep> 319.5 </dep></entry>
-      <entry><ind> 600 </ind><dep> 336.0 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
-  
-  <!-- rotazione contraria alla precedente per riportare il valore indicato nella posizione corretta -->
-  <animation>
-    <type>rotate</type>
-    <object-name>mach</object-name>
-    <property>/velocities/mach</property>
-    <factor> 342.8 </factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-  
+
 </PropertyList>
+
+
