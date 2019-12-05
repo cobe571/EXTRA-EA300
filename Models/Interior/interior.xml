@@ -139,6 +139,16 @@
   </model> -->
   
   <!--  Instruments Position Over The Panel  -->
+  
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Ai/ai.xml</path>
+    <offsets>
+      <x-m>  1.25628 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.42246 </z-m>
+    </offsets>
+  </model>
+  
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Alt/alt.xml</path>
     <offsets>
