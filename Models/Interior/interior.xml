@@ -142,63 +142,63 @@
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Alt/alt.xml</path>
     <offsets>
-      <x-m> 0.017 </x-m>
-      <y-m> 0.091 </y-m>
-      <z-m> 0.150 </z-m>
+      <x-m>  1.25628 </x-m>
+      <y-m>  0.09100 </y-m>
+      <z-m>  0.39244 </z-m>
     </offsets>
   </model>
 
-   <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Hdg/hdg.xml</path>
-    <offsets>
-      <x-m>  0.017 </x-m>
-      <y-m> -0.004 </y-m>
-      <z-m>  0.070 </z-m>
-    </offsets>
-  </model>
-  
-   <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Man/man.xml</path>
-    <offsets>
-      <x-m>  0.017 </x-m>
-      <y-m>  0.096 </y-m>
-      <z-m>  0.070 </z-m>
-    </offsets>
-  </model>
-  
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Asi/asi.xml</path>
     <offsets>
-      <x-m>  0.017 </x-m>
-      <y-m>  -0.099 </y-m>
-      <z-m>  0.150 </z-m>
+      <x-m>   1.25628 </x-m>
+      <y-m>  -0.09900 </y-m>
+      <z-m>   0.39244 </z-m>
     </offsets>
   </model>
-  
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Hdg/hdg.xml</path>
+    <offsets>
+      <x-m>  1.25628 </x-m>
+      <y-m> -0.00400 </y-m>
+      <z-m>  0.27810 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Man/man.xml</path>
+    <offsets>
+      <x-m>  1.25628 </x-m>
+      <y-m>  0.09600 </y-m>
+      <z-m>  0.27810 </z-m>
+    </offsets>
+  </model>
+
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.017 </x-m>
-      <y-m> -0.099 </y-m>
-      <z-m>  0.069 </z-m>
-    </offsets>
-  </model>
-  
-  <model>
-    <path>Aircraft/EXTRA-EA300/Models/Interior/Turn/turn.xml</path>
-    <offsets>
-      <x-m>  0.022 </x-m>
-      <y-m> -0.198 </y-m>
-      <z-m>  0.055 </z-m>
+      <x-m>  1.25628 </x-m>
+      <y-m> -0.09900 </y-m>
+      <z-m>  0.27810 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/EXTRA-EA300/Models/Interior/Oil/oil.xml</path>
     <offsets>
-      <x-m>  0.017 </x-m>
-      <y-m> 0.189 </y-m>
-      <z-m>  0.055 </z-m>
+      <x-m>  1.25628 </x-m>
+      <y-m>  0.18900 </y-m>
+      <z-m>  0.27810 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/EXTRA-EA300/Models/Interior/Turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.23570 </x-m>
+      <y-m> -0.13336 </y-m>
+      <z-m>  0.27810 </z-m>
     </offsets>
   </model>
 

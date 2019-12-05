@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Altimètre Extra 300L -->
+<PropertyList> 
+
+  <path>hdg.ac</path>
+
+  <animation>
+    <object-name>contour</object-name>
+    <object-name>ALTbezel</object-name>
+    <object-name>Face</object-name>
+    <object-name>HDGpointer</object-name>
+    <object-name>HDG-Knob</object-name>
+    <object-name>HDGclick-offset-R</object-name>
+    <object-name>HDGclick-offset-L</object-name>
+
+    <object-name>HDGvitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>HDGvitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>HDGvitre</object-name>
+  </animation>
+<!-- éclairage de l'instru 
+  <animation>
+    <type>material</type>
+    <object-name>ALTface</object-name>
+    <object-name>needle100</object-name>
+    <object-name>needle1000</object-name>
+    <object-name>needle10000</object-name>
+    <object-name>ingh</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation> -->
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HDGpointer</object-name>
+    <property>/instrumentation/magnetic-compass/indicated-heading-deg</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0
+	  </z>
+    </axis>
+  </animation>
+  
+<!-- à revoir
+  <animation> 
+    <type>rotate</type>
+    <object-name>HDG-Knob</object-name>
+    <property>instrumentation/altimeter/setting-inhg</property>
+    <interpolation>
+      <entry><ind>28.1</ind><dep>0.0</dep></entry>
+      <entry><ind>31.0</ind><dep>336.7</dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.0357 </y-m>
+      <z-m> -0.0361 </z-m>  
+    </center>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>-->
+  
+  <!-- Bouton réglage -->
+  <animation>
+    <type>pick</type>
+    <object-name>HDGclick-offset-L</object-name>
+    <visible>false</visible>
+    <action>
+      <name>decrease calibrate fine</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>-0.01</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>decrease calibrate coarse</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>-0.1</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>decrease calibrate fine (scrollwheel)</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>0.01</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>increase calibrate fine (scrollwheel)</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>-0.01</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>HDGclick-offset-R</object-name>
+    <visible>false</visible>
+    <action>
+      <name>increase calibrate fine</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>0.01</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>increase calibrate coarse</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>0.1</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>decrease calibrate fine (scrollwheel)</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>0.01</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>increase calibrate fine (scrollwheel)</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <step>-0.01</step>
+        <min>26.0</min>
+        <max>33.0</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
+
