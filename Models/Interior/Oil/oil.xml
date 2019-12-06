@@ -12,7 +12,8 @@
     <object-name>needleFS</object-name>
 
   </animation>
-<!-- Vitre
+  
+<!-- Glass -->
   <animation>
     <type>noshadow</type>
     <object-name>ALTvitre</object-name>
@@ -23,21 +24,64 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>OILvitre</object-name>
-  </animation>-->
-<!-- éclairage de l'instru 
+  </animation>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
-    <object-name>fond</object-name>
     <object-name>needleTF</object-name>
     <object-name>needleFS</object-name>
     <emission>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>controls/switches/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
     </emission>
-  </animation> -->
+  </animation>
+  
+  <animation> 
+    <type>rotate</type>
+    <object-name>needleTF</object-name>
+    <property>engines/engine/oil-temperature-degf</property>
+    <interpolation>
+      <entry><ind> 104 </ind><dep>  0 </dep></entry>
+      <entry><ind> 140 </ind><dep> 16 </dep></entry>
+      <entry><ind> 212 </ind><dep> 58 </dep></entry>
+      <entry><ind> 266 </ind><dep> 89 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.00 </x-m>
+      <y-m> -0.02 </y-m>
+      <z-m>  0.00 </z-m>  
+    </center>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>         
+ 
+  <animation> 
+    <type>rotate</type>
+    <object-name>needleFS</object-name>
+    <property>engines/engine/oil-pressure-psi</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind>  30 </ind><dep> 29.0 </dep></entry>
+      <entry><ind>  90 </ind><dep> 70.0 </dep></entry>
+      <entry><ind> 120 </ind><dep> 84.5 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.02 </y-m>
+      <z-m> 0.00 </z-m>  
+    </center>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
 
 </PropertyList>
