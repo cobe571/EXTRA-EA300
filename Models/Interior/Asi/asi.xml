@@ -43,14 +43,15 @@
     <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
     <interpolation>
       <entry><ind>   0 </ind><dep>   0 </dep></entry>
-      <entry><ind>  50 </ind><dep>  10 </dep></entry>
-      <entry><ind> 100 </ind><dep>  63 </dep></entry>
-      <entry><ind> 150 </ind><dep> 119 </dep></entry>
-      <entry><ind> 200 </ind><dep> 163 </dep></entry>
-      <entry><ind> 300 </ind><dep> 228 </dep></entry>
-      <entry><ind> 400 </ind><dep> 280 </dep></entry>
-      <entry><ind> 500 </ind><dep> 320 </dep></entry>
-      <entry><ind> 600 </ind><dep> 353 </dep></entry>
+      <entry><ind>  40 </ind><dep>  25 </dep></entry>
+      <entry><ind>  80 </ind><dep>  62 </dep></entry>
+      <entry><ind> 120 </ind><dep>  92 </dep></entry>
+      <entry><ind> 160 </ind><dep> 123 </dep></entry>
+      <entry><ind> 200 </ind><dep> 152 </dep></entry>
+      <entry><ind> 240 </ind><dep> 182 </dep></entry>
+      <entry><ind> 280 </ind><dep> 213 </dep></entry>
+      <entry><ind> 320 </ind><dep> 243 </dep></entry>
+      <entry><ind> 360 </ind><dep> 273 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
