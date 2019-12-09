@@ -25,9 +25,9 @@
     <object-name>gCtr</object-name>
     <object-name>gTip</object-name>
 
-<!-- <object-name>glass</object-name> -->
+    <object-name>glass</object-name>
   </animation>
-<!--
+
   <animation>
     <type>noshadow</type>
     <object-name>glass</object-name>
@@ -39,7 +39,7 @@
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>glass</object-name>
   </animation> 
--->
+
   <animation>
    <type>rotate</type>
    <object-name>gTip</object-name>

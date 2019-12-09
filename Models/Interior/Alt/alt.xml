@@ -80,9 +80,9 @@
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.36</factor>
     <center>
-      <x-m> -0.014 </x-m>
-      <y-m>  0.009 </y-m>
-      <z-m>  0.000 </z-m>
+      <x-m> -0.01105 </x-m>
+      <y-m>  0.00432 </y-m>
+      <z-m>  0.00000 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -97,9 +97,9 @@
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.036</factor>
     <center>
-      <x-m> -0.014 </x-m>
-      <y-m> -0.012 </y-m>
-      <z-m>  0.001 </z-m>
+      <x-m> -0.01105 </x-m>
+      <y-m> -0.01014 </y-m>
+      <z-m>  0.00097 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -114,9 +114,9 @@
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.0036</factor>
     <center>
-      <x-m> -0.014 </x-m>
-      <y-m> -0.027 </y-m>
-      <z-m>  0.001 </z-m>
+      <x-m> -0.01105 </x-m>
+      <y-m> -0.02000 </y-m>
+      <z-m>  0.00097 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -132,9 +132,9 @@
     <property>/instrumentation/altimeter/millibar/unit1</property>
     <factor>36</factor>
     <center>
-      <x-m> -0.015 </x-m>
-      <y-m>  0.009 </y-m>
-      <z-m> -0.033 </z-m>
+      <x-m> -0.01185 </x-m>
+      <y-m>  0.00941 </y-m>
+      <z-m> -0.02612 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -149,9 +149,9 @@
     <property>/instrumentation/altimeter/millibar/unit10</property>
     <factor>36</factor>
     <center>
-      <x-m> -0.015 </x-m>
-      <y-m>  0.002 </y-m>
-      <z-m> -0.033 </z-m>
+      <x-m> -0.01185 </x-m>
+      <y-m>  0.00389 </y-m>
+      <z-m> -0.02612 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -166,9 +166,9 @@
     <property>/instrumentation/altimeter/millibar/unit100</property>
     <factor>36</factor>
     <center>
-      <x-m> -0.015 </x-m>
-      <y-m> -0.005 </y-m>
-      <z-m> -0.033 </z-m>
+      <x-m> -0.01185 </x-m>
+      <y-m> -0.00156 </y-m>
+      <z-m> -0.02612 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -183,9 +183,9 @@
     <property>/instrumentation/altimeter/millibar/unit1000</property>
     <factor>36</factor>
     <center>
-      <x-m> -0.015 </x-m>
-      <y-m> -0.012 </y-m>
-      <z-m> -0.033 </z-m>
+      <x-m> -0.01185 </x-m>
+      <y-m> -0.00707 </y-m>
+      <z-m> -0.02612 </z-m>
     </center>
     <axis>
       <x> 0 </x>
