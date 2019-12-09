@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Manifold et Fuel Flow Extra 300L
-Ensemble à revoir
--->
+<!-- ==============================================
+     EXTRA EA 300 Manifold/FuelFlow Animation File
+         
+            Patrizio MELIS © 2017 2018 2019
+		   
+              GNU GENERAL PUBLIC LICENSE
+                Version 2, June 1991
+     ============================================== -->
+
 <PropertyList> 
 
 <!-- Nettoyage des noms d'objets -->
