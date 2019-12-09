@@ -11,7 +11,7 @@
 
 <PropertyList> 
 
-<!-- Nettoyage des noms d'objets -->
+<!--  -->
   <path>man.ac</path>
 
   <animation>
@@ -35,7 +35,7 @@
     <object-name>MANvitre</object-name>
   </animation>
  
-<!-- éclairage de l'instru 
+<!--  
   <animation>
     <type>material</type>
     <object-name>Fond</object-name>

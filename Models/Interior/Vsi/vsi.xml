@@ -34,7 +34,7 @@
     <object-name>VSIvitre</object-name>
   </animation>
  
-<!-- éclairage de l'instru 
+<!--  
   <animation>
     <type>material</type>
     <object-name>fond</object-name>
