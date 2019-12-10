@@ -651,6 +651,36 @@
       <z>  0 </z>
     </axis>
   </animation>
+  
+  <!--  Rear Wheel Steering  -->
+
+  <animation>
+    <name>Rear-Wheel</name>
+    <object-name>Gear-R.002</object-name>
+    <object-name>Gear-R.003</object-name>
+    <object-name>Wheel-B.000</object-name>
+	<object-name>Wheel-B.001</object-name>
+    <object-name>Wheel-B.002</object-name>
+    <object-name>Wheel-B.003</object-name>
+    <object-name>Wheel-B.004</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rear-Wheel</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  4.98847 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.37898 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y> 
+      <z> 1 </z>
+    </axis>
+  </animation>
 
   <!--  Cranking effects  -->
   <model>
